@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import YouTube from 'react-youtube';
 import Fetch from 'fetch';
-import instascan from 'instascan';
 import QrReader from 'react-qr-reader'
 /*
 class Video extends React.Component{
