@@ -8,7 +8,7 @@
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
     "react-youtube": "^7.5.0",
-    "dns" : "file:./src/mock/dns"
+    "dns": "file:./src/mock/dns"
   },
   "scripts": {
     "start": "react-scripts start",
