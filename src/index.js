@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import YouTube from 'react-youtube';
 import Fetch from 'fetch';
-import QrReader from 'react-qr-reader'
+import QrReader from 'react-qr-reader';
 /*
 class Video extends React.Component{
     render(){
