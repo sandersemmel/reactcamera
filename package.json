@@ -7,7 +7,16 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
+<<<<<<< HEAD
+=======
+    "react-youtube": "^7.5.0",
+<<<<<<< HEAD
+    "dns": "file:./src/mock/dns"
+=======
+    "dns" : "file:./src/mock/dns",
+>>>>>>> 31e2ed62442ec4143107d07f02b1765dfcc5de21
     "react-qr-code": "0.1.2"
+>>>>>>> 195ad2b88aae1b67f32f712b6f0850714820fc27
   },
   "scripts": {
     "start": "react-scripts start",
