@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import YouTube from 'react-youtube';
-import Fetch from 'fetch';
-import QrReader from 'react-qr-reader';
+import React from "react";
+import ReactDOM from "react-dom";
+import YouTube from "react-youtube";
+import Fetch from "fetch";
+import QrReader from "react-qr-reader";
 /*
 class Video extends React.Component{
     render(){
@@ -12,7 +12,7 @@ class Video extends React.Component{
                     autoplay: 1,
                     controls: 0,
                     disableKb: 0,
-                    start: '50',
+                    start: "50',
                     showinfo: 0,
                     rel: 0,
                     playsinline: 1
@@ -130,7 +130,7 @@ class ShowPreview extends React.Component{
                         delay={this.state.delay}
                         onError={this.handleError}
                         onScan={this.handleScan}
-                        style={{ width: '100%' }}
+                        style={{ width: "100%" }}
                     />
                         
                         <p>{this.state.result}</p>
