@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import YouTube from "react-youtube";
 import Fetch from "fetch";
 import QrReader from "react-qr-reader";
-import {Button, Icon, Navbar} from "react-materialize";
+import {Button, Icon, Navbar, Card, CardTitle} from "react-materialize";
 
 class ListMaker extends React.Component{
     constructor(props){
@@ -137,5 +137,41 @@ class Main extends React.Component{
     }
 }
 
-ReactDOM.render(<Main/>, document.getElementById("root"));
+class TestCard extends React.Component{
+    constructor(props){
+        super(props)
+    }
+    render(){
+        return<React.Fragment>
+                    
+                    <Card className='large'
+                        header={<CardTitle image='https://images2.roomstogo.com/is/image/roomstogo/lr_rm_bellingham_gray~Cindy-Crawford-Home-Bellingham-Gray-5-Pc-Living-Room.jpeg?$pdp_gallery_945$'>Olohuone</CardTitle>}
+                        actions={[<a href='#'>Linkki yrityksen kotisivulle.</a>]}>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </Card>
+                    ReactDOM.createPortal();
+                    <Card className="small"
+                          header={<CardTitle image="http://blog.graphisoftus.com/wp-content/uploads/2012-blog-bim-too-big.jpg">Siili</CardTitle>}
+                          actions={[<a href="#">Linkki</a>]}
+                          
+                    ></Card>
+                    <Card className="small"
+                          header={<CardTitle image="http://blog.graphisoftus.com/wp-content/uploads/2012-blog-bim-too-big.jpg">Siili</CardTitle>}
+                          actions={[<a href="#">Linkki</a>]}
+                          
+                    ></Card>
+                    <Card className="small"
+                          header={<CardTitle image="http://blog.graphisoftus.com/wp-content/uploads/2012-blog-bim-too-big.jpg">Siili</CardTitle>}
+                          actions={[<a href="#">Linkki</a>]}
+                        
+                    ></Card>
+
+        </React.Fragment>
+    }   
+}
+
+ReactDOM.render(<TestCard/>, document.getElementById("colLeft"));
 
