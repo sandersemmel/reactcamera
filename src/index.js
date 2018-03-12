@@ -5,6 +5,8 @@ import Fetch from "fetch";
 import QrReader from "react-qr-reader";
 import {Button, Icon, Navbar, Card, CardTitle} from "react-materialize";
 import Keittio from './keittio';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+
 
 
 class ListMaker extends React.Component{
@@ -120,10 +122,11 @@ class CameraButton extends React.Component{
 
 class NavBarOnTheLeft extends React.Component{
     constructor(props){
-        super(props)
+        super(props);
+        this.state={navBarName: this.props.navBarName}
     }
     render(){
-        return(<Navbar brand="Huoneet" right={true}/>)
+        return(<Navbar brand={this.state.navBarName} right={true}/>)
     }
 }
 
@@ -137,6 +140,23 @@ class Main extends React.Component{
                     <CameraButton/>
                     <Keittio/>
                 </React.Fragment>)
+    }
+}
+
+
+class TestRoutes extends React.Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(<React.Fragment>
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path='/' component={Main}/>
+                    <Route path='/keittio' component={Keittio}/>
+                </Switch>
+            </BrowserRouter>
+                </React.Fragment>);
     }
 }
 
@@ -177,4 +197,6 @@ class TestCard extends React.Component{
         </React.Fragment>
     }
 }
-ReactDOM.render(<Keittio/>, document.getElementById("root"));
+
+
+ReactDOM.render(<TestRoutes/>, document.getElementById("root"));
