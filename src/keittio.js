@@ -86,10 +86,10 @@ class Keittio extends React.Component{
     }
     render(){
         return(<React.Fragment>
-            <KeittioLeft1/>
-            <KeittioRight1/>
-            <KeittioLeft2/>
-            <KeittioRight2/>
+                <KeittioLeft1/>
+                <KeittioRight1/>
+                <KeittioLeft2/>
+                <KeittioRight2/>
             </React.Fragment>);
     }
 }

@@ -5,7 +5,9 @@ import Fetch from "fetch";
 import QrReader from "react-qr-reader";
 import {Button, Icon, Navbar, Card, CardTitle} from "react-materialize";
 import Keittio from './keittio';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import Valaistus from './valaistus';
+import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
+
 
 
 
@@ -33,14 +35,16 @@ class ShowPreview extends React.Component{
         super(props);
         this.state = {delay: 300,
                       result: 'No result',
-                      listOfResults: []}                
+                      listOfResults: [],
+                      redirect: false  };
         this.handleScan = this.handleScan.bind(this);
         this.handleError = this.handleError.bind(this);
     }
     handleScan(data){
         if(data){
             this.setState({
-              result: data
+              result: data,
+              redirect: true
             }, function (){
                 this.addListItemToState(data);
             })
@@ -72,25 +76,28 @@ class ShowPreview extends React.Component{
         var element = document.getElementById("root");
         element.appendChild(paragraph);
     }
-    render(){
-        return (<div>
+    render(){if(this.state.redirect === true){
+                   return  <Redirect to={this.state.result}/>
+                }else{
+                return <div>
                     <QrReader
                         delay={this.state.delay}
                         onError={this.handleError}
                         onScan={this.handleScan}
                         style={{ width: "100%" }}
                     />
-                        
-                        <p>{this.state.result}</p>
-                        <p>{this.state.listOfResults}</p>
-                </div>);
+
+                    <p>{this.state.result}</p>
+                    <p>{this.state.listOfResults}</p>
+                </div>;
+            }
     }
 }
 
 
 class CameraButton extends React.Component{
     constructor(props){
-        super(props)
+        super(props);
         this.state = ({activated: false, activatedName: "Käynnistä QR-Koodinlukija"})
         this.handleClick = this.handleClick.bind(this);
         const Button = (<Button onClick={this.handleClick}>{this.state.activatedName}</Button>)
@@ -130,15 +137,28 @@ class NavBarOnTheLeft extends React.Component{
     }
 }
 
-class Main extends React.Component{
+class KeittioPage extends React.Component{
     constructor(props){
         super(props)
     }
     render(){
         return(<React.Fragment>
-                    <NavBarOnTheLeft />
+                    <NavBarOnTheLeft navBarName={"Keittiö"}/>
                     <CameraButton/>
                     <Keittio/>
+                </React.Fragment>)
+    }
+}
+
+class ValaistusPage extends React.Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(<React.Fragment>
+                    <NavBarOnTheLeft navBarName={"Valaistus"}/>
+                    <CameraButton/>
+                    <Valaistus/>
                 </React.Fragment>)
     }
 }
@@ -152,8 +172,9 @@ class TestRoutes extends React.Component{
         return(<React.Fragment>
             <BrowserRouter>
                 <Switch>
-                    <Route exact path='/' component={Main}/>
-                    <Route path='/keittio' component={Keittio}/>
+                    <Route exact path='/' component={KeittioPage}/>
+                    <Route path='/keittio' component={KeittioPage}/>
+                    <Route path='/valaistus' component={ValaistusPage}/>
                 </Switch>
             </BrowserRouter>
                 </React.Fragment>);
