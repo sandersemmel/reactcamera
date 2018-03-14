@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import YouTube from "react-youtube";
 import Fetch from "fetch";
 import QrReader from "react-qr-reader";
-import {Button, Icon, Navbar, Card, CardTitle} from "react-materialize";
+import {Button, Icon, Navbar, Card, CardTitle, NavItem, Footer} from "react-materialize";
 import Keittio from './keittio';
 import Valaistus from './valaistus';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
@@ -115,7 +115,7 @@ class CameraButton extends React.Component {
         super(props);
         this.state = ({activated: false, activatedName: "Käynnistä QR-Koodinlukija"})
         this.handleClick = this.handleClick.bind(this);
-        const Button = (<Button onClick={this.handleClick}>{this.state.activatedName}</Button>)
+        
     }
 
     handleClick() {
@@ -128,10 +128,10 @@ class CameraButton extends React.Component {
 
     render() {
         if (this.state.activated === false) {
-            return <Button onClick={this.handleClick}>{this.state.activatedName}</Button>
+            return <Button onClick={this.handleClick} waves={"red"} >{this.state.activatedName} </Button>
         } else {
             return (<React.Fragment>
-                    <Button onClick={this.handleClick}>{this.state.activatedName}</Button>
+                    <Button onClick={this.handleClick} waves={"red"} >{this.state.activatedName}</Button>
                     <ShowPreview/>
                 </React.Fragment>
             )
@@ -147,7 +147,10 @@ class NavBarOnTheLeft extends React.Component {
     }
 
     render() {
-        return (<Navbar brand={this.state.navBarName} right={true}/>)
+        return (
+                <Navbar brand={this.state.navBarName} left={true} className={"navBar"} >
+                        <NavItem>Kohteet</NavItem>
+                </Navbar>)
     }
 }
 
@@ -159,6 +162,9 @@ class KeittioPage extends React.Component {
     render() {
         return (<React.Fragment>
             <NavBarOnTheLeft navBarName={"Keittiö"}/>
+            <br/>
+            <br/>
+            <br/>
             <CameraButton/>
             <Keittio/>
         </React.Fragment>)
@@ -188,15 +194,36 @@ class TestRoutes extends React.Component {
     render() {
         return (<React.Fragment>
             <BrowserRouter>
+
                 <Switch>
                     <Route exact path='/' component={KeittioPage}/>
                     <Route path='/keittio' component={KeittioPage}/>
                     <Route path='/valaistus' component={ValaistusPage}/>
                 </Switch>
             </BrowserRouter>
+            <PageFooter/>
         </React.Fragment>);
     }
 }
+
+class PageFooter extends React.Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return <Footer className={"footer"} copyrights={"2018"} waves={"blue"}   links={
+            <ul>
+                <li><a className="grey-text text-lighten-3" href="https://www.visitpori.fi/">Visit Pori</a></li>
+                <li><a className="grey-text text-lighten-3" href="http://www.karjaranta21.fi/">Karjaranta21</a></li>
+            </ul>}>
+
+            <h5> Karjarannan kohde #26</h5>
+            <p></p>
+            </Footer>
+    }
+}
+
+
 
 class TestCard extends React.Component {
     constructor(props) {
