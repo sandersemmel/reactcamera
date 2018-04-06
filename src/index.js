@@ -7,6 +7,7 @@ import {Button, Icon, Navbar, Card, CardTitle, NavItem, Footer} from "react-mate
 import Keittio from './keittio';
 import Valaistus from './valaistus';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
+import {BrowserView, isBrowser, isMobile} from 'react-device-detect';
 
 
 class ListMaker extends React.Component {
@@ -127,14 +128,18 @@ class CameraButton extends React.Component {
     }
 
     render() {
-        if (this.state.activated === false) {
-            return <Button onClick={this.handleClick} waves={"red"} >{this.state.activatedName} </Button>
-        } else {
-            return (<React.Fragment>
-                    <Button onClick={this.handleClick} waves={"red"} >{this.state.activatedName}</Button>
-                    <ShowPreview/>
-                </React.Fragment>
-            )
+        if(isMobile){
+            if (this.state.activated === false) {
+                return <Button onClick={this.handleClick} waves={"red"} >{this.state.activatedName} </Button>
+            } else {
+                return (<React.Fragment>
+                        <Button onClick={this.handleClick} waves={"red"} >{this.state.activatedName}</Button>
+                        <ShowPreview/>
+                    </React.Fragment>
+                )
+            }
+        }else{
+            return null;
         }
     }
 }
