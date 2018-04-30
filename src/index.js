@@ -8,7 +8,7 @@ import Keittio from './keittio';
 import Valaistus from './valaistus';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import {BrowserView, isBrowser, isMobile} from 'react-device-detect';
-
+import TestRoutes from './routes.js';
 
 class ListMaker extends React.Component {
     constructor(props) {
@@ -190,26 +190,6 @@ class ValaistusPage extends React.Component {
     }
 }
 
-
-class TestRoutes extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return (<React.Fragment>
-            <BrowserRouter>
-
-                <Switch>
-                    <Route exact path='/' component={KeittioPage}/>
-                    <Route path='/keittio' component={KeittioPage}/>
-                    <Route path='/valaistus' component={ValaistusPage}/>
-                </Switch>
-            </BrowserRouter>
-            <PageFooter/>
-        </React.Fragment>);
-    }
-}
 
 class PageFooter extends React.Component{
     constructor(props){
