@@ -13,6 +13,7 @@ class PohjaPage extends React.Component {
             <CameraButton/>
             <br/>
             <br/>
+            <br/>
             {this.state.teksti}
             {this.state.otsikko}
             <br/>
