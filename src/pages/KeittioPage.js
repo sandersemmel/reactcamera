@@ -89,7 +89,7 @@ class KeittioPage extends React.Component{
     }
     render(){
         return(<React.Fragment>
-                <NavBarOnTheLeft/>
+                <NavBarOnTheLeft navBarName={"Keittiö"}/>
                 <CameraButton/>
                 <br/>
                 <br/>
