@@ -13,3 +13,25 @@ body {
     background-color: grey;
     width: 50%;
 }
+#root {
+    margin: 0 auto;
+    position: relative;
+}
+.cameraButton {
+    background-color: #0288D1;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+}
+.btn:focus {
+    background-color: #0288D1;
+}
+#mainContent {
+    background-color: blue;
+    margin: auto;
+    display: block;
+}
+.l6 {
+    margin-left: 25%;
+    display: block;
+}

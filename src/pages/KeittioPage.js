@@ -4,7 +4,7 @@ import YouTube from "react-youtube";
 import Fetch from "fetch";
 import QrReader from "react-qr-reader";
 import {Button, Icon, Navbar, Card, CardTitle} from "react-materialize";
-import CameraButton from "../cameraButton.js";
+import CameraButton from "../cameraButton";
 import KeittionKaappi from "../kohteet/keittionKaappi.js";
 import NavBarOnTheLeft from "../navigationBar.js";
 
@@ -91,10 +91,6 @@ class KeittioPage extends React.Component{
         return(<React.Fragment>
                 <NavBarOnTheLeft navBarName={"Keittiö"}/>
                 <CameraButton/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
                 <br/>
                 <KeittionKaappi/>
             </React.Fragment>);

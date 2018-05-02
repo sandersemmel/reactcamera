@@ -16,10 +16,12 @@ class ShowPreview extends React.Component {
             result: 'No result',
             listOfResults: [],
             redirect: false,
+            pathName: 'No path currently'
         };
         this.handleScan = this.handleScan.bind(this);
         this.handleError = this.handleError.bind(this);
         this.redirectUser = this.redirectUser.bind(this);
+        this.parseUrl = this.parseUrl.bind(this);
     }
 
     handleScan(data) {
@@ -29,12 +31,22 @@ class ShowPreview extends React.Component {
                 redirect: true
             }, function () {
                 this.addListItemToState(data);
+                this.parseUrl(data);
             })
         }
     }
 
     addResultToList(data) {
         this.setState({resultList: data});
+    }
+    parseUrl(data) {
+        /*Parse the pathname from scanned URL and save it to State as PathName*/
+        var parser = document.createElement("a");
+        parser.href = data;
+        var path = parser.pathname;
+        var parsedPath = parser.replace('/', '');
+        this.setState({pathName: parsedPath});
+        console.log(parser);
     }
 
     handleError(err) {
@@ -96,7 +108,7 @@ class CameraButton extends React.Component {
         
     }
 
-    handleClick() {
+    handleClick() { 
         if (this.state.activated === false) {
             this.setState({activated: true, activatedName: "Sammuta Qr-Koodinlukija"})
         } else {
@@ -107,10 +119,10 @@ class CameraButton extends React.Component {
     render() {
         if(isMobile){
             if (this.state.activated === false) {
-                return <Toast rounded={true} toast="Odota hetki, laitteen kamera käynnistyy" onClick={this.handleClick} >{this.state.activatedName} </Toast>
+                return <Button className="cameraButton" onClick={this.handleClick} >{this.state.activatedName} </Button>
             } else {
                 return (<React.Fragment>
-                        <Toast onClick={this.handleClick} waves={"red"} >{this.state.activatedName}</Toast>
+                    <Button className="cameraButton" onClick={this.handleClick}> {this.state.activatedName}</Button>
                         <ShowPreview/>
                     </React.Fragment>
                 )

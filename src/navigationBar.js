@@ -18,7 +18,7 @@ class NavBarOnTheLeft extends React.Component {
     render() {
         return (
                 <Navbar brand={this.state.navBarName} left={true} className={"navBar"} >
-                        <NavItem >Kohteet</NavItem>
+                        <NavItem href="">Kohteet</NavItem>
                 </Navbar>)
     }
 }
