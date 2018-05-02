@@ -44,9 +44,12 @@ class ShowPreview extends React.Component {
         var parser = document.createElement("a");
         parser.href = data;
         var path = parser.pathname;
-        var parsedPath = parser.replace('/', '');
+        var parsedPath = path.replace('/', '');
         this.setState({pathName: parsedPath});
-        console.log(parser);
+        console.log(parsedPath);
+    }
+    sendToDb() {
+
     }
 
     handleError(err) {
