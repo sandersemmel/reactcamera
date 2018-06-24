@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {Button, Icon, Navbar, Card, CardTitle, NavItem, Footer} from "react-materialize";
-import suihkulahde from "../kuvat/suihkulahde.jpg";
 
 /*Keittiön Kaapit*/ 
 var keittionKaapitOtsikko = "Keittion Kaapit"
