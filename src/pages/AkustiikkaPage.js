@@ -10,8 +10,8 @@ class AkustiikkaPage extends React.Component{
     }
     render(){
         return(<React.Fragment>
-                    <PohjaPage/>
-                    <Kohde/>  
+                    
+                   <h1>hello</h1>
                </React.Fragment>)
     }
 }
