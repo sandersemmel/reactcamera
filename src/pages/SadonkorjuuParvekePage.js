@@ -9,7 +9,7 @@ import cameraButton from "../cameraButton.js";
 import imageAssets from "../assets/imageAssets.js";
 import textAssets from "../assets/textAssets.js";
 
-class ValaistusPage extends React.Component {
+class SadonKorjuuParvekePage extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -26,4 +26,4 @@ class ValaistusPage extends React.Component {
             </React.Fragment>);
     }
 }
-export default ValaistusPage;
+export default SadonKorjuuParvekePage;

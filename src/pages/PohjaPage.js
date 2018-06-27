@@ -16,22 +16,23 @@ class PohjaPage extends React.Component {
     super(props);
 
     this.state = {
-      teksti: this.props.teksti,
-      otsikko: this.props.otsikko,
+      text: this.props.text,
+      header: this.props.header,
       image: this.props.image,
       showLinks: this.props.showLinks
     };
   }
+
   render() {
       if(this.state.showLinks){
         return (
             <React.Fragment>
                 <Card
                 header={<CardTitle reveal image={this.state.image} waves="light" />}
-                title={this.state.otsikko}
+                title={this.state.header}
                 reveal={
                     <p>
-                    {this.state.teksti}
+                    {this.state.text}
                     <a href="#">Linkki yrityksen kotisivuille</a>
                     </p>
                 }
@@ -47,10 +48,10 @@ class PohjaPage extends React.Component {
             <React.Fragment>
                 <Card
                 header={<CardTitle reveal image={this.state.image} waves="light" />}
-                title={this.state.otsikko}
+                title={this.state.header}
                 reveal={
                     <p>
-                    {this.state.teksti}
+                    {this.state.text}
                     </p>
                 }
                 >

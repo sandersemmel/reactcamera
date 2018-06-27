@@ -13,6 +13,7 @@ import ValaistusPage from "./pages/ValaistusPage";
 import WcPage from "./pages/WcPage";
 import KeittioPage from "./pages/KeittioPage"
 import KohteetPage from "./pages/KohteetPage"
+import SadonkorjuuParvekePage from "./pages/SadonkorjuuParvekePage";
 
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import {BrowserView, isBrowser, isMobile} from 'react-device-detect';
@@ -32,6 +33,7 @@ class TestRoutes extends React.Component {
                     <Route path="/portaat" component={PortaatPage}/>
                     <Route path="/valaistus" component={ValaistusPage}/>
                     <Route path="/eteinen" component={EteisTilatPage}/>
+                    <Route path="/sadonkorjuu" component={SadonkorjuuParvekePage}/>
                 </Switch>
             </BrowserRouter>
         </React.Fragment>);

@@ -1,4 +1,5 @@
 const imageAssets = {
+    haltiatar: require("../kuvat/haltiatar-.jpg"),
     haltiatar8164: require("../kuvat/haltiatar-8164.jpg"),
     haltiatar8171: require("../kuvat/haltiatar-8171.jpg"),
     haltiatar8220: require("../kuvat/haltiatar-8220.jpg"),
