@@ -14,6 +14,7 @@ import WcPage from "./pages/WcPage";
 import KeittioPage from "./pages/KeittioPage"
 import KohteetPage from "./pages/KohteetPage"
 import SadonkorjuuParvekePage from "./pages/SadonkorjuuParvekePage";
+import SailytystilatPage from "./pages/SailytystilatPage";
 
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import {BrowserView, isBrowser, isMobile} from 'react-device-detect';
@@ -34,6 +35,11 @@ class TestRoutes extends React.Component {
                     <Route path="/valaistus" component={ValaistusPage}/>
                     <Route path="/eteinen" component={EteisTilatPage}/>
                     <Route path="/sadonkorjuu" component={SadonkorjuuParvekePage}/>
+                    <Route path="/sailytystilat" component={SailytystilatPage}/>
+                    <Route path="/kylpyhuone" component={KylpyhuonePage}/>
+                    <Route path="/sauna" component={SaunaPage}/>
+                    <Route path="/ruokailu" component={RuokailutilaPage}/>
+                    
                 </Switch>
             </BrowserRouter>
         </React.Fragment>);

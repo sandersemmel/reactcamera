@@ -109,6 +109,81 @@ const textAssets = {
             text: "Eteisen peilin sijoittamisessa on mietitty, mistä suunnasta valo tulee, jotta valonlähde (esimerkiksi auringonvalo) ei heijastu suoraan peilistä ja häikäise käyttäjäänsä. Peili ei sijaintinsa vuoksi myöskään peilaa tilaa uudelleen, esimerkiksi siten, että käytävä näyttäisi kaksi kertaa pidemmältä.",
             header: "Peili"
         }
+    },
+    sailytystilat: {
+        teksti1:{
+            text: "Koska lastenhuoneet ovat tarkoituksella melko pieniä, niihin ei tule omaa vaatesäilytystä. Perhe on kuitenkin halunnut panostaa hyvään ja toimivaan vaatehuoltojärjestelmään. Pyykit pestään ja kuivataan kodinhoitotiloissa, josta on helposti pääsy vaatesäilytykseen. Urheiluvälineille on omat säilytystilansa, mikä on tärkeää paljon urheilevan ja harrastavan, kuusihenkisen perheen arjessa. Myös pukeutumistila omana yksikkönään helpottaa arjen sujumista, kun suihkutilojen yhteydessä on vaatesäilytys ja pukeutumistilat.",
+            header: "Sailytysratkaisut"
+        },
+        teksti2:{
+            text: "Osassa alakerran kaapistoista on sisällä valaistus, joka helpotta tavaroiden löytämistä ja lisää käyttömukavuutta. Vaikka talo Haltiattaressa on panostettu hyvään yleisvalaistukseen, se ei toimi tässä kohtaa, sillä yleensä ihminen seisoo kaapin edessä estäen valon pääsyn kaappiin. Joissakin kaapeissa on myös kuvia, jotka kertovat esimerkiksi lapsille, missä mitäkin säilytetään. Tämä auttaa lapsia osaltaan myös omatoimisuudessa. ”Kaikelle on paikkansa” -tyyppinen ajattelu on tärkeä osa aistiesteettömyyttä. Näin pienikin lapsi tietää, mistä löytää omat tavaransa, ja tietää myös, mihin ne kuuluu laittaa takaisin.",
+            header:"Tavaroilla paikkansa"
+        },
+        links:{
+            link1:{
+                linkHeader: "Eteisen liukuovikaappi Puustellin.",
+                linkUrl: "http://www.puustelli.fi/puustelli-group-oy/suomalaisia-laatukeittioita-jokaiselle"
+            }
+        }
+    },
+    kylpyhuone:{
+        teksti1:{
+            text: "Suihkun seinät ovat sävyltään vaaleammat kuin lattia. Aistiesteettömässä asumisessa sävymaailma vaalenee ylöspäin. Suihkutilojen värimaailmassa on mukailtu luontoa. Kylpyhuoneeseen on valittu mattapintaiset laatat. Laatat eivät ole liukkaat, mikä tukee sekä tilan hahmottamista että turvallisuutta. Suihkun alla olevalla alueella on käytetty pienempää laattakokoa, helpottaen hahmottamista, missä kohtaa kuuluu seistä. Suihkukalusteena ovat iholle lempeän tuntuiset sadesuihkut.  Pesuaineille on upotettu kolo seinässä, joka on reunustettu eri värisellä laatalla tukemaan hahmotettavuutta. Suihkutilat ovat pienet, joten haasteita akustiikan kanssa ei ole. Ikkunaton suihkutila vaatii hyvän valaistuksen. Valaisimiksi on valittu spotti-valaisimet.",
+            header:"Kylpyhuone"
+        },
+        teksti2:{
+            text: "Ikkunattomassa kodinhoitohuoneessa työvalona toimii led-valonauha. Kaappien päällä oleva valonauha tuo tilaan epäsuoraa valaistusta. Kodinhoitohuoneen kromisessa hanassa on musta kahva, joka parantaa hanan hahmotettavuutta ja on aistiesteettömämpi verrattuna yksiväriseen hanaan. Kodinhoitohuoneen penkillä on musta pellavainen pehmuste, joten luonnonmateriaalien käyttö näkyy tässäkin. Talo Haltiattaressa on esillä erilaisia ja eri tuntuisia tekstiilejä. Erilaiset pinnat ovat tärkeitä tuntoaistin stimuloijia, ja ne antavat kaikki erilaista aistikokemusta – karhean rinnalle tuodaan pehmeää ja sileän rinnalle pörröistä.             ",
+            header:"Kodinhoitohuone"
+        },
+        teksti3:{
+            text: "Kodinhoitohuone toimii myös pukeutumistilana. Kodinhoitohuoneen liukuovien kaapit ovat mattapintaiset, eivätkä siis kiillä tai häikäise epämiellyttävästi. Kodinhoitotilojen yhteydessä olevaan kuraeteiseen on talon neliöihin nähden varattu melko iso tila. Taustalla on aktiivisen ja paljon liikkuvan perheen tarpeet: toimiva kuraeteinen tuo liikkuvan perheen arkeen sujuvuutta ja käyttöystävällisyyttä.",
+            header:"Kodinhoitohuone"
+        },
+        teksti4:{
+            text: "Suihkun seinät ovat sävyltään vaaleammat kuin lattia. Aistiesteettömässä asumisessa sävymaailma vaalenee ylöspäin. Suihkutilojen värimaailmassa on mukailtu luontoa. Kylpyhuoneeseen on valittu mattapintaiset laatat. Laatat eivät ole liukkaat, mikä tukee sekä tilan hahmottamista että turvallisuutta. Suihkun alla olevalla alueella on käytetty pienempää laattakokoa, helpottaen hahmottamista, missä kohtaa kuuluu seistä. Suihkukalusteena ovat iholle lempeän tuntuiset sadesuihkut.  Pesuaineille on upotettu kolo seinässä, joka on reunustettu eri värisellä laatalla tukemaan hahmotettavuutta. Suihkutilat ovat pienet, joten haasteita akustiikan kanssa ei ole. Ikkunaton suihkutila vaatii hyvän valaistuksen. Valaisimiksi on valittu spotti-valaisimet.",
+            header:"Kylpyhuone"
+        },
+        teksti5:{
+            text: "Suihkun seinät ovat sävyltään vaaleammat kuin lattia. Aistiesteettömässä asumisessa sävymaailma vaalenee ylöspäin. Suihkutilojen värimaailmassa on mukailtu luontoa. Kylpyhuoneeseen on valittu mattapintaiset laatat. Laatat eivät ole liukkaat, mikä tukee sekä tilan hahmottamista että turvallisuutta. Suihkun alla olevalla alueella on käytetty pienempää laattakokoa, helpottaen hahmottamista, missä kohtaa kuuluu seistä. Suihkukalusteena ovat iholle lempeän tuntuiset sadesuihkut.  Pesuaineille on upotettu kolo seinässä, joka on reunustettu eri värisellä laatalla tukemaan hahmotettavuutta. Suihkutilat ovat pienet, joten haasteita akustiikan kanssa ei ole. Ikkunaton suihkutila vaatii hyvän valaistuksen. Valaisimiksi on valittu spotti-valaisimet.",
+            header:"Kylpyhuone"
+        },
+        links:{
+            link1:{
+                linkHeader: "Suihkusetti Gustavsbergilta",
+                linkUrl: "https://www.gustavsberg.com/fi/"
+            },
+            link2:{
+                linkHeader: "Laatat Pukkilalta",
+                linkUrl: "https://www.pukkila.com/fi/"
+            }
+
+        }
+    },
+    sauna:{
+        teksti1:{
+            text:"Talossa on ulkosauna, jossa on viherkatto. Viherkatto tuo vihreyttä ja puhdistaa ilmaa. Saunarakennuksen yksi sivu on ikkunaa, josta vehreys näkyy sisälle. Tämä tukee aistiesteettömyyttä, sillä vehreyden ja luonnon näkeminen on tärkeä, rauhoittava tekijä ihmisen aisteille. ",
+            header:"Sauna"
+        },
+        teksti2:{
+            text:"Ulkosaunassa on saunajoogamahdollisuus. Saunajooga sopii hyvin aistiesteettömyyden teemaan. Aistiesteettömyyteen kuuluu myös oman kuormituksen purkaminen ja itsestä huolta pitäminen. Jokaisella on omat keinonsa purkaa omaa stressiään ja kuormitustaan, tärkeintä on oman keinon löytäminen ja myös kuormituksen tiedostaminen. Saunajooga rentouttaa kehon ja mielen. Sauna on myös jo ympäristönä aistiesteetön, vapaa kuormittavista aistiärsykkeistä.",
+            header:"Saunajooga"
+        }
+    },
+    ruokailutila:{
+        teksti1:{
+            text:"Ruokailutilan keskipisteenä on suuri ruokailuryhmä. Ruokapöydän päällä on kirkasvalolaite, jonka kirkasvalo-ominaisuus on erityisen hyvä pimeinä vuodenaikoina. Valaisin korvaa puuttuvan luonnonvalon ja auttaa kaamoksen aiheuttamiin oireisiin. Tutkimusten mukaan kirkasvalohoito parantaa energiatasoa ja vireystilaa päivän aikana. Valaisin toimii sekä tunnelma- että kirkasvalolaitteena. Valon värilämpötilaa voidaan muuttaa lämpimän valkoisesta puhtaan valkoiseen.  ",
+            header:"Ruokailuryhmä"
+        },
+        teksti2:{
+            text:"Ruokapöytä on tilaustyönä tehty ja sen kansi on talon henkeen sopien CLT-puusta. Ruokapöydän monipuolisista tuoli- ja penkkivaihtoehdoista jokainen löytää itselleen sopivan istuimen. Tuolien jalat ovat puuta, äänihaittojen minimoimiseksi.  Penkillä on lampaantaljat, jotka ovat lämpimät ja miellyttävät aisteille. Talja on taas yksi talon monista materiaaleista, joiden tarkoituksena on tuottaa erilaisia aistimuksia. Puun suosiminen kalusteissa kunnioittaa talon aistiesteetöntä, luontoa mukailevaa ja ekologista tyyliä.",
+            header:"Ruokapöytä"
+        },
+        links:{
+            link1:{
+                linkHeader: "Kirkasvalolaite, Innolux:",
+                linkUrl: "http://www.innolux.fi/fi/valaisin/uutuus/candeo-air-2016"
+            }
+        }
     }
 
 

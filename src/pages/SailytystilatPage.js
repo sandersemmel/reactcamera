@@ -9,9 +9,8 @@ import cameraButton from "../cameraButton.js";
 import imageAssets from "../assets/imageAssets.js";
 import textAssets from "../assets/textAssets.js";
 import CardPanelNoImage from "./CardPanelNoImage";
-import Colors from "../assets/colorObject";
 
-class KylpyhuonePage extends React.Component {
+class SailytystilatPage extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -19,15 +18,15 @@ class KylpyhuonePage extends React.Component {
         return (
             <React.Fragment>
                 <CameraButton/>
-            <CardPanelNoImage text={textAssets.kylpyhuone.teksti1.text} color={Colors.grey}>
-            </CardPanelNoImage>
-            <CardPanelNoImage text={textAssets.kylpyhuone.teksti2.text} color={Colors.grey2}>
-            </CardPanelNoImage>
+                <PohjaPage text={textAssets.sailytystilat.teksti1.text}
+                      image={imageAssets.haltiatar8314}
+                      header={textAssets.sailytystilat.teksti1.header}>
+                </PohjaPage>
 
-            <CardPanelNoImage text={textAssets.kylpyhuone.teksti3.text} color={Colors.grey3}>
-            </CardPanelNoImage>
-
+                <CardPanelNoImage text={textAssets.sailytystilat.teksti2.text}>
+                
+                </CardPanelNoImage>
             </React.Fragment>);
     }
 }
-export default KylpyhuonePage;
+export default SailytystilatPage;
