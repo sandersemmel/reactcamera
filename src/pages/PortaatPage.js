@@ -3,6 +3,9 @@ import PortaidenAlla from "../kohteet/portaidenalla.js";
 import React from "react";
 import ReactDOM from "react-dom";
 import CameraButton from "../cameraButton.js"
+import textAssets from "../assets/textAssets";
+import imageAssets from "../assets/imageAssets";
+import CardPanelNoImage from "./CardPanelNoImage";
 
 class PortaatPage extends React.Component{
     constructor(props){
@@ -12,11 +15,11 @@ class PortaatPage extends React.Component{
         return (<React.Fragment>
                     
                     <CameraButton/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <Portaat/>
-                    <PortaidenAlla/>
+                    <CardPanelNoImage text={textAssets.portaat.teksti1.text}>
+                    </CardPanelNoImage>
+
+                    <CardPanelNoImage text={textAssets.portaat.teksti2.text}>
+                    </CardPanelNoImage>
                 </React.Fragment>)
     }
 }

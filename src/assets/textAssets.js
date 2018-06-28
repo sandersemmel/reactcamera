@@ -76,6 +76,42 @@ const textAssets = {
 
         }
     },
+    sadonkorjuu : {
+        teksti1 :{
+            text: "Vihersisustaminen on tärkeä osa aistiesteetöntä sisustamista; luonnon näkeminen vaikuttaa rauhoittavasti ja tasapainottaa kiireisen arjen keskellä. Vehreyden näkeminen alentaa tutkitusti stressihormoneja sekä laskee sykettä. Tutkimukset osoittavat, että luonnon läheisyys lisää onnellisuutta ja vähentää sairastuvuutta. Puuttuva kasvillisuus on siis negatiivinen aistiärsyke. ",
+            header: "Sadonkorjuuparveke"
+        },
+        teksti2 :{
+            text: "Messukohteen toisen kerroksen yhteydessä, keittiön välittömässä läheisyydessä on sadonkorjuuparveke, johon on tarkoitus istuttaa muun muassa erilaisia yrttejä, vihanneksia ja mansikoita. Myös saunan ja autotallin viherkatot näkyvät hyvin yhteisiin tiloihin, joiden suuret ikkunat avautuvat sisäpihalle.",
+            header: "Sadonkorjuuparveke"
+        }
+    },
+    portaat: {
+        teksti1 :{
+            text: "Aistiesteettömyyden kannata portaikossa on huomioitu riittävä valaistus, kontrastit ja hahmotettavuus sekä yleinen turvallisuus. Portaat ovat yläkerran teeman mukaisesti CLT-elementistä, tyylikkäät ja yksinkertaiset. Portaikossa on ikkunat, mutta ne eivät yksin takaa riittävää valaistusta pimeämpinä vuodenaikoina. Käsijohteen alla oleva epäsuora valo ei ole huomiota herättävä, mutta tuo käyttöystävällisyyttä. Portaiden etupintaan tulee hahmottamista tukevat karheat kontrastiraidat, mutta messujen aikana ne eivät ole asennettuna. Kontrastiraidat helpottavat porrasaskelmien hahmottamista ja ovat tuntoaistia stimuloivia, antaen erilaisen pinnan tuntua ja virikkeitä tuntoaistille. Avaran tilan haasteet akustiikan suhteen on huomioitu akustiikkalevyteoksella, joka ehkäisee äänten kulkeutumista alakertaan. ",
+            header: "Portaat"
+        },
+        teksti2: {
+            text: "Aistiesteettömyyteen kuuluu kuormituksen purkaminen sekä mahdollisuus vetäytyä omaan rauhaan. Portaiden alla oleva pesämäinen maja on tila, joka mahdollistaa rauhoittumisen ja vetäytymisen omaan pieneen tilaan. Majaan on tuotu erilaisia materiaaleja, jotka haastavat tunto-, näkö- ja kuuloaistia. Tilassa on tyynyjä, harsoja, ja muita tuntoaistia stimuloivia materiaaleja. Lisäksi hämyisä valaistus ja rauhoittava musiikki tuovat majaan satumaista tunnelmaa. Erityisesti tuntoaistimuksilla saa kokemuksia omasta kehosta ja sen rajoista. Kehoon kohdistuvien aistimusten kautta ihminen hahmottaa oman kehonsa ja sen ääriviivat, ja kokee myös lihasten ja luuston olemassaolon ja toiminnan.",
+            header: "Satumainen maja"
+        }
+    },
+    eteistilat: {
+        teksti1:{
+            text: "Eteinen on rajattu omaksi tilakseen valaistuksen avulla. Käytävävalot päättyvät tiettyyn kohtaan, jonka jälkeen alkaa eteiseen valaistus. Myös maton pyöristetty leikkaus rajaa alueen ja korostaa eteistä omana erillisenä tilanaan. Pyöreät, silmän luonnollista liikettä mukailevat muodot tukevat aistiesteettömyyttä. Eteisen matoilla on myös akustoiva merkitys, sillä matot vaimentavat kengistä tulevia ääniä. Edellä mainitut ratkaisut helpottavat esimerkiksi lasten hahmottamista siitä, mihin asti voi mennä ulkokengillä. ",
+            header: "Eteinen"
+        },
+        teksti2: {
+            text: "Eteiskäytävän seinissä on CLT-puuta. Tutkimusten mukaan käyttämällä puupintoja sisutuksessa voidaan selvästi lisätä ihmisten hyvinvointia. Puu materiaalina rauhoittaa monin tavoin ihmisen elimistöä, se muun muassa vähentää stressihormonien määrää ja alentaa verenpainetta. Puun tuoksun kautta vapautuu sisäilmaa parantavaa vaikutusta omaavia antibakteerisia ainesosia.",
+            header:"Puu Rauhoittaa"
+        },
+        teksti3:{
+            text: "Eteisen peilin sijoittamisessa on mietitty, mistä suunnasta valo tulee, jotta valonlähde (esimerkiksi auringonvalo) ei heijastu suoraan peilistä ja häikäise käyttäjäänsä. Peili ei sijaintinsa vuoksi myöskään peilaa tilaa uudelleen, esimerkiksi siten, että käytävä näyttäisi kaksi kertaa pidemmältä.",
+            header: "Peili"
+        }
+    }
+
+
 
 }
 
