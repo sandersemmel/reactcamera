@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import YouTube from "react-youtube";
 import Fetch from "fetch";
 import QrReader from "react-qr-reader";
 import {Button, Icon, Navbar, Card, CardTitle} from "react-materialize";
@@ -28,7 +27,7 @@ class KeittioPage extends React.Component{
 
                 <CardPanelNoImage text={textAssets.keittio.teksti3.text} color={Colors.black}>
                 </CardPanelNoImage>
-                
+
                 <PohjaPage image={imageAssets.haltiatar8325} text={textAssets.keittio.teksti2.text} header={textAssets.keittio.teksti2.header}>
                 
                 </PohjaPage>

@@ -9,6 +9,7 @@ import cameraButton from "../cameraButton.js";
 import imageAssets from "../assets/imageAssets.js";
 import textAssets from "../assets/textAssets.js";
 import CardPanelNoImage from "./CardPanelNoImage";
+import NavBarOnTheLeft from "../navigationBar";
 
 class RuokailuTilaPage extends React.Component {
     constructor(props) {
@@ -17,6 +18,7 @@ class RuokailuTilaPage extends React.Component {
     render() {
         return (
             <React.Fragment>
+            <NavBarOnTheLeft navBarName={"Ruokailutila"}></NavBarOnTheLeft>
                 <CameraButton/>
                 <PohjaPage text={textAssets.ruokailutila.teksti1.text}
                            header={textAssets.ruokailutila.teksti1.header}
@@ -25,6 +27,11 @@ class RuokailuTilaPage extends React.Component {
 
                 <CardPanelNoImage text={textAssets.ruokailutila.teksti2.text}>
                 </CardPanelNoImage>
+                
+                <CardPanelNoImage text={textAssets.ruokailutila.teksti3.text}>
+                </CardPanelNoImage>
+                // ADD LINKS
+
             </React.Fragment>);
     }
 }

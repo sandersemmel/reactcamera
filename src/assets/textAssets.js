@@ -12,8 +12,8 @@ const textAssets = {
             header: "Valaistus",
             text: "Eri tilojen hahmotettavuutta keskenään on tehostettu valaistuksen avulla. Esimerkiksi alakerran eteinen erottuu käytävästä erilliseksi tilaksi muun muassa valaistuksen keinoin. Yläkerrassa yksi seinä on lähes kokonaan ikkunapintaa. Samaisella seinustalla oleva sisäänvedetty parveke taittaa kauniisti sisään tulevan luonnonvalon. Koti onkin hyvin valoisa kokonaisuus ilman häikäisyä. "
         }
-
-        
+ 
+       
     },
     keittio : {
         teksti1: {
@@ -73,7 +73,7 @@ const textAssets = {
                 linkHeader : "Akustiikkaa sisutukseen ja valaistukseen ",
                 linkUrl : "http://www.acusta.fi/"
             }
-
+ 
         }
     },
     sadonkorjuu : {
@@ -156,7 +156,7 @@ const textAssets = {
                 linkHeader: "Laatat Pukkilalta",
                 linkUrl: "https://www.pukkila.com/fi/"
             }
-
+ 
         }
     },
     sauna:{
@@ -178,16 +178,201 @@ const textAssets = {
             text:"Ruokapöytä on tilaustyönä tehty ja sen kansi on talon henkeen sopien CLT-puusta. Ruokapöydän monipuolisista tuoli- ja penkkivaihtoehdoista jokainen löytää itselleen sopivan istuimen. Tuolien jalat ovat puuta, äänihaittojen minimoimiseksi.  Penkillä on lampaantaljat, jotka ovat lämpimät ja miellyttävät aisteille. Talja on taas yksi talon monista materiaaleista, joiden tarkoituksena on tuottaa erilaisia aistimuksia. Puun suosiminen kalusteissa kunnioittaa talon aistiesteetöntä, luontoa mukailevaa ja ekologista tyyliä.",
             header:"Ruokapöytä"
         },
+        teksti3:{
+            text:"Myös kattauksessa on huomioitu aistiesteettömyys. Jokaisen ruokailijan paikka on rajattu pöytätabletilla, mikä tukee varsinkin lapsilla oman tilan hahmottamista. Pehmeä pöytätabletti myös hillitsee astioiden käytöstä syntyvää kilinää. Astiaston värimaailmassa hyödynnetään kontrasteja sekä luonnonmukaisia värejä: kiveä, valkoista ja mattamustaa; lisäksi osassa tarjoiluastioista on puiset alustat. Koska kyseessä on lapsiperhe, aistiesteettömyyden kannalta lapsille sopivan kokoiset astiat ja aterimet ovat tärkeitä.",
+            header:"Ruokapöydän kattaus"
+        },
         links:{
             link1:{
                 linkHeader: "Kirkasvalolaite, Innolux:",
                 linkUrl: "http://www.innolux.fi/fi/valaisin/uutuus/candeo-air-2016"
+            },
+            link2:{
+                linkHeader:"Kattaus: Antti Airio",
+                linkUrl:"http://www.anttiairio.fi/fi/etusivu.html"
+            },
+            link3:{
+                linkHeader:"Kattaus: Villeroy&Boch",
+                linkUrl: "https://www.villeroy-boch.eu/en/"
             }
         }
+    },
+    olohuone:{
+        teksti1:{
+            text:"Seinät ja katto ovat CLT-massiivipuuta. Korkeaa tilaa rauhoittaa keittiön laskettu katto, joka katkaisee ääniaaltoja ja ehkäisee äänen kiertämistä. Lattia on parkettia, joka on akustisesti miellyttävä vaihtoehto. Parketti on myös mukavampi jalalle, lämpimämpi kuin esimerkiksi laminaatti. Talon valokatkaisimet on valittu aistiesteettömiä periaatteita noudattaen: katkaisimien kehys on epätasaista karheaa kiveä. Valokatkaisimet erottuvat sekä visuaalisesti että antavat tuntoastimuksen.",
+            header:"Olohuone"
+        },
+        teksti2:{
+            text:"Olohuoneessa on nahkainen ”daybed”, jonka pinta ikääntyy kauniisti. Pehmeä nahka on käyttäjälleen miellyttävä, mutta samalla tyyliltään rento. Olohuoneen sisustuksessa onkin huomioitu erilaiset tekstiilit, jotka stimuloivat tuntoaistia. Napakat, tukevat huonekalut ovat ergonominen vaihtoehto ja ryhdikkyys tuo mukavuutta huonekalun käyttöön. Olohuoneen sohvan kangas on likaa hylkivä, joten sitä ei tarvitse käsitellä kemiallisilla aineilla. Olohuoneen tekstiilit ovat hajuttomia. Olohuoneen iso villamatto sopii talon ekologiseen henkeen. ",
+            header:"Olohuoneen sisustus"
+        },
+        links:{
+            link1:{
+                linkHeader:"Matto, ”Kide”",
+                linkUrl:"https://serahelsinki.com/"
+            },
+            link2:{
+                linkHeader:"Sohva",
+                linkUrl:"https://hakolahuonekalu.fi/tuote/lazy-3n-istuttava-sohva/"
+            },
+            link3:{
+                linkHeader:"Daybed",
+                linkUrl:"https://hakolahuonekalu.fi/tuote/nap-leather/"
+            },
+            link4:{
+                linkHeader:"Valokatkaisimien kehykset",
+                linkUrl:"https://www.schneider-electric.fi"
+            }
+        }
+    },
+    lukunurkkaus:{
+        teksti1:{
+            text:"Olohuoneen yhteydessä olevan luku-/leponurkkauksen akustiikkaa parantaa mm. avoin kirjahylly, sillä kirjat sitovat ääntä. Lukutila on myös erotettu pienellä seinäpätkällä omaksi tilakseen, mikä rauhoittaa tilan äänimaisemaa. Tilassa oleva Kuu-valaisin antaa epäsuoraa valaistusta. Lukunurkkauksen tuoli on muodoiltaan pyöristetty, ja siten noudattaa luonnollista silmän liikettä. Lukunurkkauksen matto on talon teeman mukaisesti luonnonmateriaalia, villaa. Aito etiopialainen lampaanvillainen matto on tehty täysin käsityönä. Mattoa ei myöskään ole kemiallisesti käsitelty. Lukunurkkauksella on myös isompi aistiesteetön merkitys. Aistiesteettömään asumiseen kuuluu, että ihmisellä (varsinkin lapsilla) on halutessaan mahdollisuus sekä vetäytymiseen että energian purkamiseen. Lukunurkkauksessa onkin mahdollisuus vetäytyä, mutta samalla kuitenkin olla muiden seurassa. Joskus lapsi kaipaa omaa rauhaa, mutta ei kuitenkaan halua mennä yksin huoneeseensa, vaan haluaa olla perheen kanssa, vaikkei aivan välittömässä yhteydessä. Leponurkkaus on yksi ”tilan sisällä monta tilaa”- ajattelun toteutuksista. ",
+            header:"Lukunurkkaus"
+        },
+        links:{
+            link1:{
+                linkHeader: "Matto, “Tuohi”",
+                linkUrl: "https://storeofhope.com/products/tuohi-1?lang=fi"
+            },
+            link2:{
+                linkHeader: "Kuu-valaisin",
+                linkUrl: "http://www.elinaulvio.fi/KUU-reversible-pendant-light-series"
+            }
+        }
+    },
+    makuuhuoneet:{
+        teksti1:{
+            text:"Aistiesteettömyyden teema näkyy huoneiden sijoittelussa, mikä myös tukee kodin akustisia ratkaisuja. Isompien lasten huoneet sijaitsevat alakerrassa, kun taas perheen muiden jäsenten yläkerrassa. Alakerran makuuhuoneiden editse on vähän kulkua, eivätkä portaat kulje makuuhuoneiden päältä, jolloin makuuhuoneisiin ei juuri kantaudu tekemisen tuottamaa ääntä. Alakerrassa isompien lasten makuuhuoneiden väliin on sijoitettu tv-huone, joka on nukkuma-aikaan tyhjillään. Makuuhuoneiden välissä oleva tyhjä huone tuo näiden huoneiden välille rauhaa. ",
+            header:"Huoneiden sijoittelu"
+        },
+        teksti2:{
+            text:"Makuuhuoneiden seinissä on lämpimät sävyt, ja tiloissa on tarkoituksella vältetty valkoisia seiniä. Luonnonvärit ja -sävyt ovat yleensä turvalliseksi koettuja, kun taas isoina pintoina valkoinen hankaloittaa tilojen hahmottamista. Aistiesteettömyyden periaatteita mukaillen kodin lattiat ovat hieman tummemmat kuin seinät ja valitut sävyt vaalenevat ylöspäin, mikä helpottaa tilojen hahmottamista. Myös ovet ja ikkunat erottuvat paremmin kokonaisuudesta, kun kaikki ei ole samanväristä. Makuuhuoneiden vuodevaatteet ovat pellavaa, joka luonnonmateriaalina on hengittävä ja miellyttävän tuntuinen. Pellava myös muuntautuu tarpeen mukaan ollen talvella lämmin ja kesällä viileä. Toisessa alakerran makuuhuoneista on valokuvia, jotka on tulostettu akustiikkalevylle. Levyt sitovat ääntä, ja ovat siten akustinen ja aistiesteetön ratkaisu.",
+            header:"Alakerran makuuhuoneet isommille lapsille"
+        },
+        teksti3:{
+            text: "Alakerran televisiohuone on liukuovien myötä muunneltavissa ja yhdisteltävissä viereisiin makuuhuoneisiin, mikä helpottaa esimerkiksi yövieraiden majoittamista sekä tilojen muokkaamista lasten kasvaessa ja muuttaessa omilleen. Tv-huoneessa olevat verhot ovat samettia ja ne akustoivat hyvin ääntä. Samalla verhot antavat elokuvateatterimaista tunnelmaa huoneeseen. Tv-huoneessa on akustiikkalevyjä, jotka sitovat ääntä. Huoneessa on säkkituoleja, jotka mahdollistavat rennon oleskelun. Stressin purkaminen onkin tärkeä osa aistiesteettömyyttä: ihmisen on tärkeää purkaa stressiään ja latautua seuraavaan päivään, jotta jaksaa taas vastaanottaa uusia aistiärsykkeitä. ",
+            header:"Tv-huone"
+        },
+        teksti4:{
+           text: "Lastenhuoneiden seinät ja katto ovat CLT-puumateriaalista, joka on akustisesti miellyttävä vaihtoehto. Isossa yläkerran oleskelutilassa syntyvät äänet hajoavat keittiön kohdalla laskevaan kattoon, eivätkä äänet kantaudu niin helposti makuuhuoneisiin.  Pojan huoneessa akustisena ratkaisuna toimii lastenhuoneeseen sopiva karttakankaasta tehty akustiikkataulu. Tytön huoneessa taas katosta roikkuvat pom pomit tuovat katon ikään kuin lähemmäs lasta ja luovat pesämäistä tunnelmaa. Samoin verhot ja matot vaimentavat ääniä ja tuovat kodikkuutta ja pehmeyttä lattialla tapahtuviin leikkeihin. Lastenhuoneiden ikkunoissa on pimentävät verhot. Koska Suomen kesä on valoisa, pimennysmahdollisuus helpottaa varsinkin pienten lasten rauhoittumista levolle.",
+           header: "Yläkerran makuuhuoneet pienemmille lapsille"
+
+        }, 
+        teksti5:{
+            text: "Aistiesteettömyydessä selkeät struktuurit ja ”kaikelle on paikkansa” -ajattelu ovat tärkeitä; siksi myös lastenhuoneissa tavaroilla on omat paikkansa. Esimerkiksi leikkialustoina hyödynnettävät kangaspussit toimivat myös lelujen säilytyspaikkoina.", 
+            header: "Kaikelle on paikkansa -ajattelu"
+
+        }, 
+        teksti6:{
+            text: "Huoneiden sängyt on suunniteltu nimenomaan lapsille. Lapsen kokoon sopivat ja lapsen kasvun myötä säädettävät kalusteet ovat olennaisia aistiesteettömässä asumisessa. Tytön parvisänky on 160 cm ja sen alle syntyy mukava pesämäinen oleskelutila säkkituoleineen ja pehmeine istuskelutyynyineen. Lumo-lastensängyt (Lumo kids) ovat pinottavia, muunneltavia ja kooltaan säädettäviä. Samoin niiden pyöristetty muotokieli sopii hyvin aistiesteettömään sisustukseen.", 
+            header: "Huoneiden sängyt"
+ 
+        },
+        links:{
+            link1:{
+                linkHeader:"Maalit: Länsi-Suomen väripiste",
+                linkUrl:"http://www.varipiste.fi/"
+            },
+            link2:{
+                linkHeader:"Maalit: Fintex",
+                linkUrl:"https://www.fintex.fi/"
+            },
+            link3:{
+                linkHeader:"Pellavalakanat ",
+                linkUrl:"https://www.mammaroosa.fi/fi"
+            },
+            link4:{
+                linkHeader:"LumoKids parvisänky",
+                linkUrl:"https://lumokids.com/tuote/ketara-parvisanky/"
+            },
+            link5:{
+                linkHeader:"LumoKids lastensänky",
+                linkUrl:"https://lumokids.com/tuote/korento-lastensanky/"
+            },
+            link6:{
+                linkHeader:"Tiitiäinen & tyllerö",
+                linkUrl:"https://www.sitruunat.fi/epages/sitruunat.sf/fi_FI/?ObjectPath=/Shops/2016111003/Categories/Lapsille/Leikkialustat"
+            },
+            link4:{
+                linkHeader:"",
+                linkUrl:""
+
+            }
+        }
+    },
+    toiminnallisuus:{
+ 
+        teksti1:{
+            text: "Lapsilla on luontaisesti energiaa ja he ovat liikkuvaisia. Aistiesteettömyyteen kuuluu, että lasten luontaista taipumista liikkumiseen ja aktiivisuuteen tuetaan. Aistiesteetön koti ei siis tarkoita vain hiljaisuutta tai rauhoittumista, vaan myös mahdollisuutta purkaa energiaa muita häiritsemättä. Tässä kohteessa lapsille annetaankin mahdollisuus liikkumiseen tuomalla kotiin erilaisia välineitä energian purkamiseen. Aistiesteettömässä kodissa olennaista on energian purkamisen ja rauhoittumisen tasapaino. Kaikki meistä eivät pura aistikuormitustaan samalla tavalla, esimerkiksi sohvalla lepäämällä, vaan osa tarvitsee liikettä palautuakseen. Talo Haltiattaressa toiminnallisuuta tukevat mm. puolapuut, trapetsi, leuanvetotanko, portaiden alla oleva pesä, ulkona olevat keinut, trampoliini sekä mahdollisesti myöhemmässä vaiheessa pihaan rakennettava uima-allas. Onkin tärkeää muistaa, että keinumisen, roikkumisen, hyppimisen, työntämisen ja vetämisen tunteet ovat tärkeitä varsinkin kehittyvälle lapselle.", 
+            header: "Toiminnallisuus"
+ 
+        },
+        links:{
+            link1:{
+                linkHeader:"Suomen voimistelutuote",
+                linkUrl:"https://www.voimistelurenkaat.fi/"
+            }
+    } 
+    },
+    aistilelut:{
+
+        teksti1:{
+            text: "Lasten huoneeseen on tuotu esille leluja, jotka sopivat aistiesteettömyyden teemaan. Leluilla on muun muassa aistipuoleen keskittyviä tekijöitä, keskittymistä ja rentoutumista, stressin lievitystä edistävää vaikutusta.", 
+            header: "Aistilelut lastenhuoneessa"
+ 
+        },
+
+        teksti2:{
+            text: "Nystyräpalloilla voi antaa lapselle stressiä lievittävää, rentouttavaa hierontaa. Hieronta stimuloi aisteja, ja lapsi saa samalla myös tärkeää läheisyyttä, mikä saattaa rauhoittaa levottoman lapsen.",
+            header: "Hierontapallot"
+ 
+        },
+
+        teksti3:{
+            text: "Kangaslabyrintissa kulkee kuula kankaan, ”labyrintin” sisällä, sitä voi pujotella sormin. Tämä antaa käsille tekemistä ja auttaa levotonta lasta keskittymisessä. Liike kehittää myös motoriikkaa. Kangaslabyrinttia voi pidellä esimerkiksi vasten jalkaa, ja näin myös jalan tuntoaisti saa stimulaatiota.",
+            header: "Kangaslabyrintti (Tehnyt Paula Eloranta)"
+ 
+        },
+
+        teksti4:{
+            text: "Aistipullossa on sisällä nesteen lisäksi glitter-hileitä, jotka liikkuvat pulloa käännellessä. Liikettä on rentouttavaa katsella. Pullo tarjoaa mahdollisuudet rentoutumiseen ja keskittymiseen.",
+            header: "Aistipullo"
+ 
+        },
+
+        teksti5:{
+            text: "Erilaisilla painotuotteilla on tutkimusten mukaan todettu olevan rauhoittava vaikutus. Tällainen painolelu voi rauhoittaa lasta nukkumaan tai auttaa keskittymään esimerkiksi koulussa tai kotona kotitehtäviä tehdessä.",
+            header: "Painolelu (Käärme) (Valmistanut Jenni Koskinen)"
+ 
+        },
+
+        teksti6:{
+            text: "Messuilla on opiskelijan valmistama muistipeli, jonka osat on tehty tuntoaistia stimuloivasta materiaalista ja osien sisällä on erilaisia esineitä, jotka tuottavat erilaista ääntä. Tällainen muistipeli stimuloi tunto- ja kuuloaistia.",
+            header: "Muistilelu"
+ 
+        }
+    },
+    luovatila:{
+
+        teksti1:{
+            text: "Messukohteessa on myös luova tila, erillisellä sisäänkäynnillä. Tilassa mahdollistuu nelilapsisen perheen vanhempien työskenteleminen kotona. Tilaa voidaan hyödyntää myös vieraiden majoituksessa tai muuttaa lasten kasvaessa asunnoksi, jossa voi harjoitella itsenäistymistä. Tilassa on oma sisäänkäynti, suihkutilat sekä pieni keittosyvennys.",
+            header: "Luova tila erillisellä sisäänkäynnillä"
+ 
+        },
+
+        teksti2:{
+            text: "Pitkällä seinällä on perheelle tärkeästä ja mieleisestä paikasta, Porin Yyteristä otetusta kuvasta teetetty valokuvatapetti, jonka vaakalinja tuo leveyttä ja tilan tuntua kapeaan tilaan. Tilaan on tuotu puolapuut ja säkkituoleja, joten tilassa on mahdollista purkaa energiaa ja kuormitusta, ja myös mahdollisuus luovaan toimintaan ja työskentelyyn. Akustisia ratkaisuja tilassa ovat akustiikkapaneeli, sekä valaisin, jossa on myös akustoiva ominaisuus.",
+            header: "Perheelle tärkeä ja mieluinen paikka"
+ 
+        }
+    },
+    wc:{
+        teksti1:{
+            text: "Wc-tilojen lattialaatat ja allaskalusteet ovat mattapintaisia. Pesualtaan hanan musta kahva tukee hanan hahmotettavuutta ja pyöreä hyvin valaistu peili on näköaistille ystävällinen. Peilin valaisimen lisäksi altaan ja kalusteen välissä on valonlähde sekä katossa hyvä yleisvalo. Wc:ssä on jokaiselle perheenjäsenelle pyyhkeet omalla nimellä brodeerattuna. Aistiesteettömyys on myös toimintakulttuuriasiaa. Mitä selkeämpi ja strukturoidumpi ympäristömme on, sitä vähemmän aistimme kuormittuvat.",
+            header: "WC"
+        }
     }
-
-
-
 }
-
+ 
 module.exports = textAssets
