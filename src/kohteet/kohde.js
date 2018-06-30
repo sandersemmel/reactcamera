@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {Button, Icon, Navbar, Card, CardTitle, NavItem, Footer} from "react-materialize";
+import suihkulahde from "../kuvat/suihkulahde.jpg"
 
 class Kohde extends React.Component{
     constructor(props){
@@ -11,7 +12,7 @@ class Kohde extends React.Component{
         <React.Fragment>
         <Card className='large'
                   header={<CardTitle
-                      image={null} >Olohuone</CardTitle>}
+                      image={suihkulahde} >Olohuone</CardTitle>}
                   actions={[<a href='http://www.google.com'>Linkki yrityksen kotisivulle.</a>]}
                   reveal={<p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                       been the industry's standard dummy text ever since the 1500s, when an unknown printer took a

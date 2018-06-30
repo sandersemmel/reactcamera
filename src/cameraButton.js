@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import YouTube from "react-youtube";
 import Fetch from "fetch";
 import QrReader from "react-qr-reader";
 import {Button, Icon, Navbar, Card, CardTitle, NavItem, Footer, Toast} from "react-materialize";
