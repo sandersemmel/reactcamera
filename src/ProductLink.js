@@ -11,7 +11,8 @@ class ProductLink extends React.Component {
         super(props);
         this.state = {
             text: this.props.text,
-            url: this.props.url
+            url: this.props.url,
+            showProducts: false
         }
         this.redirect = this.redirect.bind(this);
     }
@@ -27,15 +28,12 @@ class ProductLink extends React.Component {
         console.log(this.state.url);
     }
     render(){
-        return(<React.Fragment>
+            return(<React.Fragment>
                 <CardPanel className={colors.orangedim} onClick={this.redirect}>
                 <h6>{this.state.text}</h6>
                 </CardPanel>
-              </React.Fragment>
-        )
-
+              </React.Fragment>)
     }
-
 }
 
 export default ProductLink;    
