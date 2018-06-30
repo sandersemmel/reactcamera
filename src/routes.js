@@ -20,6 +20,7 @@ import WcPage from "./pages/WcPage";
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import {BrowserView, isBrowser, isMobile} from 'react-device-detect';
 import OlohuonePage from "./pages/OlohuonePage";
+import HomePage from "./pages/HomePage";
 
 class TestRoutes extends React.Component {
     constructor(props) {
@@ -29,7 +30,7 @@ class TestRoutes extends React.Component {
         return (<React.Fragment>
             <BrowserRouter>
                 <Switch>
-                    <Route exact path='/' component={AkustiikkaPage}/>
+                    <Route exact path='/' component={HomePage}/>
                     <Route path='/akustiikka' component={AkustiikkaPage}/>
                     <Route path='/keittio' component={KeittioPage}/>
                     <Route path='/kohteet' component={KohteetPage}/>

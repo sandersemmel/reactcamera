@@ -30,7 +30,7 @@ class Test extends Component {
           onScan={this.handleScan}
           style={{ width: '100%' }}
           />
-        <p>{this.state.result}</p>
+        <h1>Kohdista kamera</h1>
         <p>test</p>
       </div>
     )

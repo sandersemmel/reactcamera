@@ -5,7 +5,9 @@ import QrReader from "react-qr-reader";
 import {Button, Icon, Navbar, Card, CardTitle, NavItem, Footer, Toast} from "react-materialize";
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import {BrowserView, isBrowser, isMobile} from 'react-device-detect';
-
+import Colors from "./assets/colorObject";
+import Sizes from "./assets/sizes";
+import SmallCardHeader from "./pages/SmallCardHeader";
 // Shows the camera preview in browser
 class ShowPreview extends React.Component {
     constructor(props) {
@@ -15,7 +17,8 @@ class ShowPreview extends React.Component {
             result: 'No result',
             listOfResults: [],
             redirect: false,
-            pathName: 'No path currently'
+            pathName: 'No path currently',
+            firstTimeVisitor: true
         };
         this.handleScan = this.handleScan.bind(this);
         this.handleError = this.handleError.bind(this);
@@ -94,8 +97,9 @@ class ShowPreview extends React.Component {
                         style={{width: "100%"}}
                     />
 
-                    <p>{this.state.result}</p>
-                    <p>{this.state.listOfResults}</p>
+                    <SmallCardHeader text="Kohdista kamera QR-Koodiin"
+                                      color={Colors.blue}
+                                      size={Sizes.small}/>
                 </div>;
             }
         }
@@ -126,6 +130,7 @@ class CameraButton extends React.Component {
                 return (<React.Fragment>
                     <Button className="cameraButton" onClick={this.handleClick}> {this.state.activatedName}</Button>
                         <ShowPreview/>
+                        
                     </React.Fragment>
                 )
             }
