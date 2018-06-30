@@ -10,11 +10,12 @@ import SaunaPage from "./pages/SaunaPage";
 import TyotilatPage from "./pages/TyotilaPage";
 import UlkotilatPage from "./pages/UlkotilatPage";
 import ValaistusPage from "./pages/ValaistusPage";
-import WcPage from "./pages/WcPage";
 import KeittioPage from "./pages/KeittioPage"
 import KohteetPage from "./pages/KohteetPage"
 import SadonkorjuuParvekePage from "./pages/SadonkorjuuParvekePage";
 import SailytystilatPage from "./pages/SailytystilatPage";
+import ToiminnallisuusPage from "./pages/ToiminnallisuusPage";
+import WcPage from "./pages/WcPage";
 
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import {BrowserView, isBrowser, isMobile} from 'react-device-detect';
@@ -42,6 +43,8 @@ class TestRoutes extends React.Component {
                     <Route path="/ruokailu" component={RuokailutilaPage}/>
                     <Route path="/olohuone" component={OlohuonePage}/>
                     <Route path="/makuuhuoneet" component={MakuuhuoneetPage}/>
+                    <Route path="/toiminnallisuus" component={ToiminnallisuusPage}/>
+                    <Route path="/wc" component={WcPage}/>
                 </Switch>
             </BrowserRouter>
         </React.Fragment>);

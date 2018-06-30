@@ -10,6 +10,10 @@ import imageAssets from "../assets/imageAssets.js";
 import textAssets from "../assets/textAssets.js";
 import CardPanelNoImage from "./CardPanelNoImage";
 import NavBarOnTheLeft from "../navigationBar";
+import SmallCardHeader from "./SmallCardHeader";
+import Sizes from "../assets/sizes";
+import ProductLink from "../ProductLink";
+import Colors from "../assets/colorObject";
 
 class SaunaPage extends React.Component {
     constructor(props) {
@@ -18,16 +22,30 @@ class SaunaPage extends React.Component {
     render() {
         return (
             <React.Fragment>
+                
+                <NavBarOnTheLeft navBarName={"Sauna"}/>
                 <CameraButton/>
-                <NavBarOnTheLeft navBarName={"Sauna"}>
-                </NavBarOnTheLeft>
                 <PohjaPage text={textAssets.sauna.teksti1.text}
                            image={imageAssets.haltiatar8410}
                            header={textAssets.sauna.teksti1.header}>
                 </PohjaPage>
 
+                <SmallCardHeader
+                text={"Ulkosauna"}
+                color={Colors.black}
+                size={Sizes.small}/>
+
                 <CardPanelNoImage text={textAssets.sauna.teksti2.text}>
                 </CardPanelNoImage>
+
+                {/*Tuotteet*/}
+                <SmallCardHeader
+                text={"Tuotteet"}
+                color={Colors.orange}
+                size={Sizes.small}
+              />
+              <ProductLink text={textAssets.sauna.links.link1.linkHeader}
+              url={textAssets.sauna.links.link1.linkUrl}/>
             </React.Fragment>);
     }
 }
