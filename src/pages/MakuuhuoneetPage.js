@@ -44,7 +44,7 @@ class MakuuhuoneetPage extends React.Component {
                  color={Colors.orange}
                  size={Sizes.small}
                />
-               {/*Alakerran makuuhuoneet isommille lapsille- tuotteet*/}
+               {/*Alakerran makuuhuoneet isommille  lapsille- tuotteet*/}
                <ProductLink text={textAssets.makuuhuoneet.links.link1.linkHeader}
                url={textAssets.makuuhuoneet.links.link1.linkUrl}/>
                
