@@ -99,18 +99,14 @@ class MakuuhuoneetPage extends React.Component {
               <CardPanelNoImage text={textAssets.toiminnallisuus.teksti1.text}/>
               <CardPanelNoImage text={textAssets.toiminnallisuus.teksti2.text}/>
   
+              <ProductLink text="Lue lisää aistileluista"
+              url="/portaat#"/>
               {/*Toiminallisuus-tuotteet*/}
               <SmallCardHeader
               text={"Tuotteet"}
               color={Colors.orange}
               size={Sizes.small}
                 />
-
-            <ProductLink text="Lue lisää aistileluista"
-                            url="/portaat#"/>
-
-           
-
 
             <ProductLink text={textAssets.toiminnallisuus.links.link1.linkHeader}
             url={textAssets.toiminnallisuus.links.link1.linkUrl}/>
