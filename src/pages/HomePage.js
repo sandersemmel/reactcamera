@@ -10,23 +10,28 @@ import imageAssets from "../assets/imageAssets.js";
 import textAssets from "../assets/textAssets.js";
 import SmallCardHeader from "./SmallCardHeader";
 import Colors from "../assets/colorObject";
+import {BrowserView, isBrowser, isMobile} from 'react-device-detect';
 class HomePage extends React.Component {
     constructor(props) {
         super(props);
     }
     render() {
-        return (
-            <React.Fragment>
-                <CameraButton/>
-                <br/>
-                <SmallCardHeader text={"1. Käynnistä QR-koodinlukija ylhäällä olevasta napista"}
-                                 color={Colors.green}/>
-
-                <SmallCardHeader text={"2. Salli laitteen käyttää kameraa."}/>
-
-                <SmallCardHeader text={"3. Kohdista puhelimen kamera QR-koodin kohdalle"}
-                color={Colors.green} />
-            </React.Fragment>);
+        if(isMobile){
+            return (
+                <React.Fragment>
+                    <CameraButton/>
+                    <br/>
+                    <SmallCardHeader text={"1. Käynnistä QR-koodinlukija ylhäällä olevasta napista"}
+                                     color={Colors.green}/>
+    
+                    <SmallCardHeader text={"2. Salli laitteen käyttää kameraa."}/>
+    
+                    <SmallCardHeader text={"3. Kohdista puhelimen kamera QR-koodin kohdalle"}
+                    color={Colors.green} />
+                </React.Fragment>);
+        }else{
+            return(window.location.replace("https://www.haltiatar.xyz/kohteet"))
+        }
     }
 }
 export default HomePage;
