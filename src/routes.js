@@ -22,6 +22,8 @@ import {BrowserView, isBrowser, isMobile} from 'react-device-detect';
 import OlohuonePage from "./pages/OlohuonePage";
 import HomePage from "./pages/HomePage";
 import LuovaTilaPage from "./pages/LuovaTilaPage";
+import Footer from "react-materialize/lib/Footer";
+import ImageAssets from "./assets/imageAssets";
 
 class TestRoutes extends React.Component {
     constructor(props) {
@@ -50,6 +52,15 @@ class TestRoutes extends React.Component {
                     <Route path="/luovatila" component={LuovaTilaPage}/>
                 </Switch>
             </BrowserRouter>
+
+            <Footer className={"footer"} copyrights={"2018"} waves={"blue"}   links={
+            <ul>
+                <li><img src={ImageAssets.karjaranta21}></img><img src={ImageAssets.visitpori}></img><img src={ImageAssets.samklogo}></img></li>
+            </ul>}>
+
+            <h5> Talo Haltiatar</h5>
+            <p></p>
+            </Footer>
         </React.Fragment>);
     }
 }
