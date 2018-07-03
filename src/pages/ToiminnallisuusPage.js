@@ -21,6 +21,7 @@ import SmallCardHeader from "./SmallCardHeader";
 import NavBarOnTheLeft from "../navigationBar";
 import Sizes from "../assets/sizes";
 import ProductLink from "../ProductLink";
+import LinksComponent from "../LinksComponent.js";
 class ToiminnallisuusPage extends React.Component {
     constructor(props){
         super(props);
@@ -32,16 +33,23 @@ class ToiminnallisuusPage extends React.Component {
 
             <NavBarOnTheLeft navBarName={"Toiminnallisuus"}/>
             <CameraButton/>
-                          {/*Toiminallisuus*/}
-                          <SmallCardHeader text={"Toiminnallisuus"}
+
+            {/*Lupa liikkua kotona*/}    
+            <SmallCardHeader text={"Lupa Liikkua kotona"}
               color={Colors.black}
               size={Sizes.small}/>
-              
               <CardPanelNoImage text={textAssets.toiminnallisuus.teksti1.text}/>
+
+            {/*Välineitä energian purkuun*/}  
+              <SmallCardHeader text={"Välineitä energian purkuun"}
+              color={Colors.black}
+              size={Sizes.small}/>
               <CardPanelNoImage text={textAssets.toiminnallisuus.teksti2.text}/>
               <ProductLink text="Lue lisää aistileluista"
               url="/portaat#"/>
 
+            <LinksComponent amountOfLinks="1" links={textAssets.toiminnallisuus.links}>
+            </LinksComponent>
             </React.Fragment>
         )
 
