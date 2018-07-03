@@ -29,7 +29,7 @@ class PohjaPage extends React.Component {
             <React.Fragment>
                 <Card
                 header={<CardTitle reveal image={this.state.image} waves="light" />}
-                title={this.state.header}
+                title={this.state.header + "(klikkaa kuvaa)"}
                 reveal={
                     <p>
                     {this.state.text}

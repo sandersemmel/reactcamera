@@ -14,6 +14,7 @@ import SmallCardHeader from "./SmallCardHeader";
 import Sizes from "../assets/sizes";
 import ProductLink from "../ProductLink";
 import Colors from "../assets/colorObject";
+import LinksComponent from "../LinksComponent.js";
 
 class SaunaPage extends React.Component {
     constructor(props) {
@@ -31,7 +32,7 @@ class SaunaPage extends React.Component {
                 </PohjaPage>
 
                 <SmallCardHeader
-                text={"Ulkosauna"}
+                text={"Saunajooga"}
                 color={Colors.black}
                 size={Sizes.small}/>
 
@@ -39,13 +40,9 @@ class SaunaPage extends React.Component {
                 </CardPanelNoImage>
 
                 {/*Tuotteet*/}
-                <SmallCardHeader
-                text={"Tuotteet"}
-                color={Colors.orange}
-                size={Sizes.small}
-              />
-              <ProductLink text={textAssets.sauna.links.link1.linkHeader}
-              url={textAssets.sauna.links.link1.linkUrl}/>
+              <LinksComponent amountOfLinks="1" links={textAssets.sauna.links}>
+              </LinksComponent>
+              
             </React.Fragment>);
     }
 }

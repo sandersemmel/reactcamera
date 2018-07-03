@@ -14,6 +14,8 @@ import SmallCardHeader from "./SmallCardHeader";
 import Sizes from "../assets/sizes";
 import NavBarOnTheLeft from "../navigationBar";
 import ProductLink from "../ProductLink";
+import ReactDropdown from "react-dropdown";
+import LinksComponent from "../LinksComponent.js";
 class KylpyhuonePage extends React.Component {
     constructor(props) {
         super(props);
@@ -21,7 +23,7 @@ class KylpyhuonePage extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <NavBarOnTheLeft navBarName="Kylpyhuone & KHH"></NavBarOnTheLeft>
+                <NavBarOnTheLeft navBarName="Suihku- ja kodinhoito"></NavBarOnTheLeft>
                 <CameraButton/>
                 <SmallCardHeader
                 text={"Suihkutila"}
@@ -39,31 +41,24 @@ class KylpyhuonePage extends React.Component {
             </CardPanelNoImage>
 
             <SmallCardHeader
-            text={"Kodinhoitohuone"}
+            text={"Kodinhoitotila"}
             color={Colors.black}
             size={Sizes.small}
           />
-
             <CardPanelNoImage text={textAssets.kylpyhuone.teksti3.text} color={Colors.grey3}>
             </CardPanelNoImage>
 
             <SmallCardHeader
-            text={"Tuotteet"}
-            color={Colors.orange}
+            text={"Pesu- ja puhdistusaineet"}
+            color={Colors.black}
             size={Sizes.small}
           />
-          <ProductLink text={textAssets.kylpyhuone.links.link1.linkHeader}
-          url={textAssets.kylpyhuone.links.link1.linkUrl}/>
+            <CardPanelNoImage text={textAssets.kylpyhuone.teksti5.text} color={Colors.grey3}>
+            </CardPanelNoImage>
           
-          <ProductLink text={textAssets.kylpyhuone.links.link2.linkHeader}
-          url={textAssets.kylpyhuone.links.link2.linkUrl}/>
 
-          <ProductLink text={textAssets.kylpyhuone.links.link3.linkHeader}
-          url={textAssets.kylpyhuone.links.link3.linkUrl}/>     
-
-          <ProductLink text={textAssets.kylpyhuone.links.link4.linkHeader}
-          url={textAssets.kylpyhuone.links.link4.linkUrl}/>  
-
+          <LinksComponent amountOfLinks="4" links={textAssets.kylpyhuone.links}>
+          </LinksComponent>
             </React.Fragment>);
     }
 }

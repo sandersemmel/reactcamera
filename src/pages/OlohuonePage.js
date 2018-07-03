@@ -12,7 +12,8 @@ import CardPanelNoImage from "./CardPanelNoImage";
 import NavBarOnTheLeft from "../navigationBar";
 import SmallCardHeader from "./SmallCardHeader";
 import Colors from "../assets/colorObject";
-import sizes from "../assets/sizes";
+import Sizes from "../assets/sizes";
+import LinksComponent from "../LinksComponent.js";
 
 class OlohuonePage extends React.Component {
     constructor(props) {
@@ -36,39 +37,31 @@ class OlohuonePage extends React.Component {
                             header={textAssets.olohuone.teksti2.header}
                             image={imageAssets.haltiatar8365}>
                 </PohjaPage>
-                // ADD LINKS
 
-                <SmallCardHeader text={"Ruokailutila"} color={Colors.orange}>
-                </SmallCardHeader>
-               { /*Ruokailutila*/ }
-                <PohjaPage text={textAssets.ruokailutila.teksti1.text}
-                header={textAssets.ruokailutila.teksti1.header}
-                image={imageAssets.haltiatar8333}>
-                </PohjaPage>
+                {/*Taide*/}
+                <SmallCardHeader text={"Taide"}
+                color={Colors.black}
+                size={Sizes.small}/>
 
-                <SmallCardHeader text={textAssets.ruokailutila.teksti2.header}
-                                 size={sizes.small}
-                                 color={Colors.black}>
-                </SmallCardHeader>
-                <CardPanelNoImage text={textAssets.ruokailutila.teksti2.text}
-                                    color={Colors.grey3}>
-                </CardPanelNoImage>
-                
-                <SmallCardHeader text={textAssets.ruokailutila.teksti3.header}
-                size={sizes.small}
-                color={Colors.black}>
-                </SmallCardHeader>
-                <CardPanelNoImage text={textAssets.ruokailutila.teksti3.text}
+                <CardPanelNoImage text={textAssets.olohuone.teksti3.text}
                                     color={Colors.grey3}>
                 </CardPanelNoImage>
 
-                <SmallCardHeader text={"Lukunurkkaus"} color={Colors.orange}>
-                </SmallCardHeader>
                 {/*Lukunurkkaus*/}
-                <PohjaPage text={textAssets.lukunurkkaus.teksti1.text}
-                header={textAssets.lukunurkkaus.teksti1.header}
-                image={imageAssets.haltiatar8171}>
-                </PohjaPage>
+                <SmallCardHeader text={"Lukunurkkaus"}
+                        color={Colors.black}
+                        size={Sizes.small}/>
+
+                <CardPanelNoImage text={textAssets.lukunurkkaus.teksti1.text}
+                                    color={Colors.grey3}>
+                </CardPanelNoImage>
+                <CardPanelNoImage text={textAssets.lukunurkkaus.teksti2.text}
+                                    color={Colors.grey3}>
+                </CardPanelNoImage>
+
+                <LinksComponent amountOfLinks="7" links={textAssets.olohuone.links}>
+
+                </LinksComponent>
             </React.Fragment>);
     }
 }

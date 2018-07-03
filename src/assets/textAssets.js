@@ -34,7 +34,7 @@ const textAssets = {
         },
         links:{
             link1:{
-                linkHeader: "Keittiön kaapistot Puustellin",
+                linkHeader: "Puustellin keittiökaapistot",
                 linkUrl: "http://www.puustelli.fi/mallisto/keittiot"
             },
             link2:{
@@ -54,7 +54,7 @@ const textAssets = {
         },
         teksti2 : {
             text: "Talo Haltiattaressa on hyödynnetty akustisia ratkaisuja, kuten muotoja, jotka katkaisevat ääniaallot, materiaaleja, kuten paksuja kankaita, mattoja, akustiikkalevyjä ja kirjoja, joilla on akustoiva merkitys sekä huoneiden sijoittelua. Talo Haltiattaressa on akustiikkalevyjä 2. kerroksen portaikossa, sillä korkeassa tilassa ääni lähtee helpommin kiertämään ja kaikumaan. Samoin 1. kerroksen yhdessä makuuhuoneessa on perheen valokuvista teetetty kolmen akustiikkalevyn sarja.",
-            header: "Akustiikka"
+            header: "Akustiset ratkaisut"
         },
         teksti3 : {
             text : "Kohteessa on käytetty runsaasti CLT-puuelementtiä, sillä puu on akustisesti miellyttävä elementti. Tutkimusten mukaan käyttämällä puupintoja sisutuksessa, voidaan selvästi lisätä ihmisten hyvinvointia. Puu materiaalina rauhoittaa monin tavoin ihmisen elimistöä, se muun muassa vähentää stressihormonien määrää ja alentaa verenpainetta. Puun tuoksun kautta vapautuu sisäilmaa parantavaa vaikutusta omaavia antibakteerisia ainesosia.",
@@ -111,12 +111,20 @@ const textAssets = {
             header: "Eteinen"
         },
         teksti2: {
-            text: "Eteiskäytävän seinissä on CLT-puuta. Tutkimusten mukaan käyttämällä puupintoja sisutuksessa voidaan selvästi lisätä ihmisten hyvinvointia. Puu materiaalina rauhoittaa monin tavoin ihmisen elimistöä, se muun muassa vähentää stressihormonien määrää ja alentaa verenpainetta. Puun tuoksun kautta vapautuu sisäilmaa parantavaa vaikutusta omaavia antibakteerisia ainesosia.",
+            text: "Eteiskäytävän seinissä on CLT-puuta. Tutkimusten mukaan käyttämällä puupintoja sisutuksessa voidaan selvästi lisätä ihmisten hyvinvointia. Puu materiaalina rauhoittaa monin tavoin ihmisen elimistöä, se muun muassa vähentää stressihormonien määrää ja alentaa verenpainetta. Puun tuoksun kautta vapautuu sisäilmaa parantavaa vaikutusta omaavia antibakteerisia ainesosia. Lisäksi eteiskäytävään sijoitettu akustinen teos rauhoittaa tilan äänimaisemaa.",
             header:"Puu Rauhoittaa"
         },
         teksti3:{
             text: "Eteisessä, kuten myös keittiössä, on Finnish Fire:n paloturvallisuutta edistäviä tuotteita. Eteisessä kukkatelineenä toimiva palosammutuskaluste sisältää sammuttimen. Kalusteeseen on integroitu valo, joka alkaa palon syttyessä vilkkumaan. Tämä visuaalinen informaatio on erityisen tärkeää, mikäli perheessä tai lähipiirissä on esimerkiksi huonokuuloinen henkilö. Toisaalta isompien lasten kuunnellessa musiikkia alakerrassa, visuaalinen informaatio palovaarasta on erittäin tärkeä.",
             header: "Finnish Firen paloturvallisuustuotteet"
+        },
+        teksti4:{
+            text: "Perheen omaan käyttöön on suunniteltu toinen eteinen, joka johtaa sisäpihalle. Tämän eteisen yhteydessä olevaan kuraeteiseen on talon neliöihin nähden varattu melko iso tila. Taustalla on aktiivisen ja paljon liikkuvan perheen tarpeet: toimiva kuraeteinen tuo liikkuvan perheen arkeen sujuvuutta ja käyttöystävällisyyttä, mikä on tärkeä osa aistiesteettömyyttä.",
+            header: "Oman väen eteinen"
+        },
+        teksti5:{
+            text: "Kodinhoitohuoneen ja pukeutumistilan läheisyydessä olevien peilikaappien sijoittamisessa on mietitty, mistä suunnasta valo tulee, jotta valonlähde (esimerkiksi auringonvalo) ei heijastu suoraan peilistä ja häikäise käyttäjäänsä. Peili ei sijaintinsa vuoksi myöskään peilaa tilaa uudelleen, esimerkiksi siten, että käytävä näyttäisi kaksi kertaa pidemmältä.",
+            header: "Oman väen eteinen"
         },
         links:{
             link1:{
@@ -128,17 +136,17 @@ const textAssets = {
     sailytystilat: {
         teksti1:{
             text: "Koska lastenhuoneet ovat tarkoituksella melko pieniä, niihin ei tule omaa vaatesäilytystä. Perhe on kuitenkin halunnut panostaa hyvään ja toimivaan vaatehuoltojärjestelmään. Pyykit pestään ja kuivataan kodinhoitotiloissa, josta on helposti pääsy vaatesäilytykseen. Urheiluvälineille on omat säilytystilansa, mikä on tärkeää paljon urheilevan ja harrastavan, kuusihenkisen perheen arjessa. Myös pukeutumistila omana yksikkönään helpottaa arjen sujumista, kun suihkutilojen yhteydessä on vaatesäilytys ja pukeutumistilat.",
-            header: "Sailytysratkaisut"
+            header: "Vaatesäilytys"
         },
         
         teksti2:{
-            text: "Kodinhoitohuoneen ja pukeutumistilan läheisyydessä olevien peilikaappien sijoittamisessa on mietitty, mistä suunnasta valo tulee, jotta valonlähde (esimerkiksi auringonvalo) ei heijastu suoraan peilistä ja häikäise käyttäjäänsä. Peili ei sijaintinsa vuoksi myöskään peilaa tilaa uudelleen, esimerkiksi siten, että käytävä näyttäisi kaksi kertaa pidemmältä.",
-            header:"Kodinhoitohuone"
+            text: "Osassa alakerran kaapistoista on sisällä valaistus, joka helpotta tavaroiden löytämistä ja lisää käyttömukavuutta. Vaikka talo Haltiattaressa on panostettu hyvään yleisvalaistukseen, se ei toimi tässä kohtaa, sillä yleensä ihminen seisoo kaapin edessä estäen valon pääsyn kaappiin. ",
+            header:"Säilytysjärjestelmät"
         },
 
         teksti3:{
-            text: "Osassa alakerran kaapistoista on sisällä valaistus, joka helpotta tavaroiden löytämistä ja lisää käyttömukavuutta. Vaikka talo Haltiattaressa on panostettu hyvään yleisvalaistukseen, se ei toimi tässä kohtaa, sillä yleensä ihminen seisoo kaapin edessä estäen valon pääsyn kaappiin. Joissakin kaapeissa on myös kuvia, jotka kertovat esimerkiksi lapsille, missä mitäkin säilytetään. Tämä auttaa lapsia osaltaan myös omatoimisuudessa. ”Kaikelle on paikkansa” -tyyppinen ajattelu on tärkeä osa aistiesteettömyyttä. Näin pienikin lapsi tietää, mistä löytää omat tavaransa, ja tietää myös, mihin ne kuuluu laittaa takaisin.",
-            header:"Tavaroilla paikkansa"
+            text: "Joissakin kaapeissa on myös kuvia, jotka kertovat esimerkiksi lapsille, missä mitäkin säilytetään. Tämä auttaa lapsia osaltaan myös omatoimisuudessa. ”Kaikelle on paikkansa” -tyyppinen ajattelu on tärkeä osa aistiesteettömyyttä. Näin pienikin lapsi tietää, mistä löytää omat tavaransa, ja tietää myös, mihin ne kuuluu laittaa takaisin.",
+            header:"Kuvat tukena"
         },
         links:{
             link1:{
@@ -157,8 +165,8 @@ const textAssets = {
             header:"Sadesuihkut"
         },
         teksti3:{
-            text: "Samassa tilassa oleva kodinhoitohuone toimii myös pukeutumistilana. Tilassa naulakot on aseteltu niin, että myös pienimmät käyttäjät ylettyvät omiin kylpytakkeihinsa ja pyyhkeisiinsä. Kodinhoitohuoneen liukuovien kaapit ovat mattapintaiset, eivätkä kiillä tai häikäise epämiellyttävästi. Kodinhoitohuoneessa työvalona toimii led-valonauha ja myöhemmin kaappien päälle asennettava valonauha tuo tilaan epäsuoraa valaistusta. Kodinhoitohuoneen kromisessa hanassa on musta kahva, joka parantaa hanan hahmotettavuutta ja on aistiesteettömämpi verrattuna yksiväriseen hanaan.",
-            header:"Kodinhoitohuone"
+            text: "Samassa tilassa oleva kodinhoitotila toimii myös pukeutumistilana. Tilassa naulakot on aseteltu niin, että myös pienimmät käyttäjät ylettyvät omiin kylpytakkeihinsa ja pyyhkeisiinsä. Kodinhoitohuoneen liukuovien kaapit ovat mattapintaiset, eivätkä kiillä tai häikäise epämiellyttävästi. Kodinhoitohuoneessa työvalona toimii led-valonauha ja myöhemmin kaappien päälle asennettava valonauha tuo tilaan epäsuoraa valaistusta.",
+            header:"Kodinhoitotila"
         },
         teksti4:{
             text: "Kodinhoitotilojen yhteydessä olevaan kuraeteiseen on talon neliöihin nähden varattu melko iso tila. Taustalla on aktiivisen ja paljon liikkuvan perheen tarpeet: toimiva kuraeteinen tuo liikkuvan perheen arkeen sujuvuutta ja käyttöystävällisyyttä.",
@@ -171,11 +179,11 @@ const textAssets = {
         },
         links:{
             link1:{
-                linkHeader: "Suihkusetti Gustavsbergilta",
+                linkHeader: "Gustavsbergin suihkukalusteet",
                 linkUrl: "https://www.gustavsberg.com/fi/"
             },
             link2:{
-                linkHeader: "Laatat Pukkilalta",
+                linkHeader: "Pukkilan laatat",
                 linkUrl: "https://www.pukkila.com/fi/"
             },
             link3:{
@@ -191,8 +199,8 @@ const textAssets = {
     },
     sauna:{
         teksti1:{
-            text:"Talossa on ulkosauna, johon on suunniteltu myöhemmin toteutettava viherkatto. Viherkatto tuo vihreyttä ja puhdistaa ilmaa. Saunarakennuksen yksi sivu on ikkunaa, josta pihan vehreys näkyy sisälle. Tämä tukee aistiesteettömyyttä, sillä vehreyden ja luonnon näkeminen on tärkeä, rauhoittava tekijä ihmisen aisteille. ",
-            header:"Sauna"
+            text: "Talossa on ulkosauna, johon on suunniteltu myöhemmin toteutettava viherkatto. Viherkatto tuo vihreyttä ja puhdistaa ilmaa. Saunarakennuksen yksi sivu on ikkunaa, josta pihan vehreys näkyy sisälle. Tämä tukee aistiesteettömyyttä, sillä vehreyden ja luonnon näkeminen on tärkeä, rauhoittava tekijä ihmisen aisteille. Saunassa on Veto-kiuas, jossa on höyryominaisuus. Näin saunaan saa halutessaan lempeämmät ja kosteammat löylyt, jotka sopivat kovaa kuumuutta vierastaville saunojille.",
+            header:"Ulkosauna"
         },
         teksti2:{
             text:"Ulkosaunassa on saunajoogamahdollisuus. Saunajooga sopii hyvin aistiesteettömyyden teemaan. Aistiesteettömyyteen kuuluu myös oman kuormituksen purkaminen ja itsestä huolta pitäminen. Jokaisella on omat keinonsa purkaa omaa stressiään ja kuormitustaan, tärkeintä on oman keinon löytäminen ja myös kuormituksen tiedostaminen. Saunajooga rentouttaa kehon ja mielen. Sauna on myös jo ympäristönä aistiesteetön, vapaa kuormittavista aistiärsykkeistä.",
@@ -212,12 +220,12 @@ const textAssets = {
     }
 },    ruokailutila:{
     teksti1:{
-        text:"Ruokailutilan keskipisteenä on suuri ruokailuryhmä. Ruokapöydän päällä on kirkasvalolamppu, jonka kirkasvalo-ominaisuus on erityisen hyvä pimeinä vuodenaikoina. Valaisin korvaa puuttuvan luonnonvalon ja auttaa kaamoksen aiheuttamiin oireisiin. Tutkimusten mukaan kirkasvalohoito parantaa energiatasoa ja vireystilaa päivän aikana. Valaisin toimii sekä tunnelma- että kirkasvalolaitteena. Valon värilämpötilaa voidaan muuttaa lämpimän valkoisesta puhtaan valkoiseen.  ",
-        header:"Ruokailuryhmä"
+        text: "Ruokapöydän päällä on kirkasvalolamppu, jonka kirkasvalo-ominaisuus on erityisen hyvä pimeinä vuodenaikoina. Valaisin korvaa puuttuvan luonnonvalon ja auttaa kaamoksen aiheuttamiin oireisiin. Tutkimusten mukaan kirkasvalohoito parantaa energiatasoa ja vireystilaa päivän aikana. Valaisin toimii sekä tunnelma- että kirkasvalolaitteena. Valon värilämpötilaa voidaan muuttaa lämpimän valkoisesta puhtaan valkoiseen.  ",
+        header:"Ruokailutilan valaistus"
     },
     teksti2:{
-        text:"Ruokapöytä on tilaustyönä tehty ja sen kansi on talon henkeen sopien CLT-puusta. Ruokapöydän monipuolisista tuoli- ja penkkivaihtoehdoista jokainen löytää itselleen sopivan istuimen. Tuolien jalat ovat puuta, äänihaittojen minimoimiseksi.  Penkillä on lampaantaljat, jotka ovat lämpimät ja miellyttävät aisteille. Talja on taas yksi talon monista materiaaleista, joiden tarkoituksena on tuottaa erilaisia aistimuksia. Puun suosiminen kalusteissa kunnioittaa talon aistiesteetöntä, luontoa mukailevaa ja ekologista tyyliä.",
-        header:"Ruokapöytä"
+        text: "Ruokailutilan keskipisteenä on suuri ruokailuryhmä. Ruokapöytä on tilaustyönä tehty ja sen kansi on talon henkeen sopien CLT-puusta. Ruokapöydän monipuolisista tuoli- ja penkkivaihtoehdoista jokainen löytää itselleen sopivan istuimen. Tuolien jalat ovat puuta, äänihaittojen minimoimiseksi.  Penkillä on lampaantaljat, jotka ovat lämpimät ja miellyttävät aisteille. Talja on taas yksi talon monista materiaaleista, joiden tarkoituksena on tuottaa erilaisia aistimuksia. Puun suosiminen kalusteissa kunnioittaa talon aistiesteetöntä, luontoa mukailevaa ja ekologista tyyliä.",
+        header:"Ruokailuryhmä"
     },
     teksti3:{
         text:"Myös kattauksessa on huomioitu aistiesteettömyys. Jokaisella ruokailijalla on oma paikka, mikä tukee varsinkin lapsilla oman tilan hahmottamista. Kattauksessa voidaan myös käyttää pehmeää pöytätablettia, mikä osaltaan hillitsee astioiden käytöstä syntyvää kilinää. Astiaston värimaailmassa hyödynnetään kontrasteja sekä luonnonmukaisia värejä: kiveä, valkoista ja mattamustaa; lisäksi osassa tarjoiluastioista on puiset alustat. Koska kyseessä on lapsiperhe, aistiesteettömyyden kannalta lapsille sopivan kokoiset astiat ja aterimet ovat tärkeitä.",
@@ -225,7 +233,7 @@ const textAssets = {
     },
     links:{
         link1:{
-            linkHeader: "Kirkasvalolaite, Innolux:",
+            linkHeader: "Innoluxin kirkasvalolaite",
             linkUrl: "http://www.innolux.fi/fi/valaisin/uutuus/candeo-air-2016"
         },
         link2:{
@@ -233,11 +241,11 @@ const textAssets = {
             linkUrl:"http://www.anttiairio.fi/fi/etusivu.html"
         },
         link3:{
-            linkHeader:"Kattaus: Villeroy&Boch",
+            linkHeader:"Astiat/ Villeroy&Boch",
             linkUrl: "https://www.villeroy-boch.eu/en/"
         },
         link4:{
-            linkHeader:"Ruokapöytä Karu Puutyön tekemä",
+            linkHeader:"Karu Puutyön ruokapöytä",
             linkUrl: "https://www.villeroy-boch.eu/en/"
         }
     }
@@ -259,7 +267,7 @@ olohuone:{
 
     links:{
         link1:{
-            linkHeader:"Matto, ”Kide”",
+            linkHeader:"Olohuoneen Kide-matto",
             linkUrl:"https://serahelsinki.com/"
         },
         link2:{
@@ -277,12 +285,25 @@ olohuone:{
         link5:{
             linkHeader:"Taiteilija Johanna Oras",
             linkUrl:"http://johannaoras.com/"
+        },
+        link6:{
+            linkHeader:"Lukunurkan Tuohi-matto",
+            linkUrl:"https://storeofhope.com/products/tuohi-1?lang=fi"
+        },
+        link7:{
+            linkHeader:"Lukunurkan Kuu-valaisin",
+            linkUrl:"http://www.elinaulvio.fi/KUU-reversible-pendant-light-series"
         }
+
     }
 },
 lukunurkkaus:{
     teksti1:{
-        text:"Olohuoneen yhteydessä olevan luku-/leponurkkauksen akustiikkaa parantaa mm. avoin kirjahylly, sillä kirjat sitovat ääntä. Lukutila on myös erotettu pienellä seinäpätkällä omaksi tilakseen, mikä rauhoittaa tilan äänimaisemaa. Tilassa oleva Kuu-valaisin antaa epäsuoraa valaistusta. Lukunurkkauksen tuoli on muodoiltaan pyöristetty, ja siten noudattaa luonnollista silmän liikettä. Lukunurkkauksen matto on talon teeman mukaisesti luonnonmateriaalia, villaa. Aito etiopialainen lampaanvillainen matto on tehty täysin käsityönä. Mattoa ei myöskään ole kemiallisesti käsitelty. Lukunurkkauksella on myös isompi aistiesteetön merkitys. Aistiesteettömään asumiseen kuuluu, että ihmisellä (varsinkin lapsilla) on halutessaan mahdollisuus sekä vetäytymiseen että energian purkamiseen. Lukunurkkauksessa onkin mahdollisuus vetäytyä, mutta samalla kuitenkin olla muiden seurassa. Joskus lapsi kaipaa omaa rauhaa, mutta ei kuitenkaan halua mennä yksin huoneeseensa, vaan haluaa olla perheen kanssa, vaikkei aivan välittömässä yhteydessä. Leponurkkaus on yksi ”tilan sisällä monta tilaa”- ajattelun toteutuksista. ",
+        text: "Olohuoneen yhteydessä olevan luku-/leponurkkauksen akustiikkaa parantaa mm. avoin kirjahylly, sillä kirjat sitovat ääntä. Lukutila on myös erotettu pienellä seinäpätkällä omaksi tilakseen, mikä rauhoittaa tilan äänimaisemaa. Tilassa oleva Kuu-valaisin antaa epäsuoraa valaistusta. Lukunurkkauksen tuoli on muodoiltaan pyöristetty, ja siten noudattaa luonnollista silmän liikettä. Lukunurkkauksen matto on talon teeman mukaisesti luonnonmateriaalia, villaa. Aito etiopialainen lampaanvillainen matto on tehty täysin käsityönä. Mattoa ei myöskään ole kemiallisesti käsitelty. ",
+        header:"Lukunurkkaus"
+    },
+    teksti2:{
+        text: "Lukunurkkauksella on myös isompi aistiesteetön merkitys. Aistiesteettömään asumiseen kuuluu, että ihmisellä (varsinkin lapsilla) on halutessaan mahdollisuus sekä vetäytymiseen että energian purkamiseen. Lukunurkkauksessa onkin mahdollisuus vetäytyä, mutta samalla kuitenkin olla muiden seurassa. Joskus lapsi kaipaa omaa rauhaa, mutta ei kuitenkaan halua mennä yksin huoneeseensa, vaan haluaa olla perheen kanssa, vaikkei aivan välittömässä yhteydessä. Leponurkkaus on yksi ”tilan sisällä monta tilaa”- ajattelun toteutuksista. ",
         header:"Lukunurkkaus"
     },
     links:{
@@ -361,6 +382,20 @@ makuuhuoneet:{
             linkHeader:"Akustiikkataulut",
             linkUrl: "https://www.acusta.fi"
         }
+    },
+    links2:{
+        link1:{
+            linkHeader:"Tiitiäinen & tyllerö",
+            linkUrl:"https://www.sitruunat.fi/epages/sitruunat.sf/fi_FI/?ObjectPath=/Shops/2016111003/Categories/Lapsille/Leikkialustat"
+        },
+        link2:{
+            linkHeader:"LumoKids parvisänky",
+            linkUrl:"https://lumokids.com/tuote/ketara-parvisanky/"
+        },
+        link3:{
+            linkHeader: "LumoKids Korento-Sänky",
+            linkUrl: "https://lumokids.com/tuote/korento-lastensanky/"
+        }
     }
 },
 toiminnallisuus:{
@@ -410,13 +445,13 @@ aistilelut:{
 
     teksti5:{
         text: "Erilaisilla painotuotteilla on tutkimusten mukaan todettu olevan rauhoittava vaikutus. Tällainen painolelu voi rauhoittaa lasta nukkumaan tai auttaa keskittymään esimerkiksi koulussa tai kotona kotitehtäviä tehdessä.",
-        header: "Painolelu (Käärme) (Valmistanut Jenni Koskinen)"
+        header: "Painokäärme (tehnyt Jenni Koskinen)"
 
     },
 
     teksti6:{
-        text: "Messuilla on opiskelijan valmistama muistipeli, jonka osat on tehty tuntoaistia stimuloivasta materiaalista ja osien sisällä on erilaisia esineitä, jotka tuottavat erilaista ääntä. Tällainen muistipeli stimuloi tunto- ja kuuloaistia.",
-        header: "Äänimuistipeli"
+        text: "Äänimuistipeliä pelataan kuten tavallista muistipeliä, mutta vain kuulon varassa. Peli stimuloi tuntoaistia ja virkattujen munien sisällä on esineitä, jotka tuottavat erilaisia ääniä. Tällainen muistipeli haastaa lasta keskittymään ja harjoittamaan kuulonvaraista tunnistamista ja muistamista.",
+        header: "Äänimuistipeli (tehnyt Sari Viljanen)"
 
     }
 },
@@ -429,7 +464,7 @@ luovatila:{
     },
 
     teksti2:{
-        text: "Tilan seinällä on valokuvatapetti perheelle tärkeästä ja mieleisestä paikasta, Porin Yyteristä. Kuvan vaakalinja tuo leveyttä ja tilan tuntua kapeaan tilaan. Tilaan on tuotu puolapuut ja sohvasänky, joten tilassa on mahdollista purkaa energiaa ja kuormitusta, ja myös mahdollisuus luovaan toimintaan ja työskentelyyn.  Sohvan yläpuolella oleva akustinen teos rauhoittaa tilan äänimaisemaa.",
+        text: "Tilan seinällä on valokuvatapetti perheelle tärkeästä ja mieleisestä paikasta, Porin Yyteristä. Kuvan vaakalinja tuo leveyttä ja tilan tuntua kapeaan tilaan. Tilaan on tuotu puolapuut ja sohvasänky, joten tilassa on mahdollista purkaa energiaa ja kuormitusta.  Messujen ajan tilassa on Finnish Fire -tuotteiden esittelyä, joten tila ei luonnollisestikaan näytä samalta kuin tavallisesti. Esimerkiksi seinillä olevat tuotteet eivät ole normaalisti osa tilan sisustusta.",
         header: "Perheelle tärkeä ja mieluinen paikka"
 
     }

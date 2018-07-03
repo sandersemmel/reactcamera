@@ -13,6 +13,7 @@ import Colors from "../assets/colorObject";
 import SmallCardHeader from "./SmallCardHeader";
 import Sizes from "../assets/sizes";
 import ProductLink from "../ProductLink";
+import LinksComponent from "../LinksComponent.js";
 class EteisTilatPage extends React.Component {
   constructor(props) {
     super(props);
@@ -49,17 +50,25 @@ class EteisTilatPage extends React.Component {
           color={Colors.grey}
         />
 
+      <SmallCardHeader
+        text={"Oman väen eteinen"}
+        color={Colors.black}
+        size={Sizes.small}
+      />
+        <CardPanelNoImage
+          text={textAssets.eteistilat.teksti4.text}
+          color={Colors.grey}
+        />
+        <CardPanelNoImage
+          text={textAssets.eteistilat.teksti5.text}
+          color={Colors.grey}
+        />
+
         {/*Tuotteet*/}
 
-        <SmallCardHeader
-          text={"Tuotteet"}
-          color={Colors.orange}
-          size={Sizes.small}
-        />
-        <ProductLink
-          text={textAssets.eteistilat.links.link1.linkHeader}
-          url={textAssets.eteistilat.links.link1.linkUrl}
-        />
+        <LinksComponent amountOfLinks="1" links={textAssets.eteistilat.links}>
+        
+        </LinksComponent>
       </React.Fragment>
     );
   }

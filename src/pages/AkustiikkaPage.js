@@ -12,6 +12,8 @@ import NavBarOnTheLeft from "../navigationBar";
 import SmallCardHeader from "./SmallCardHeader";
 import Sizes from "../assets/sizes";
 import ProductLink from "../ProductLink";
+import LinksComponent from "../LinksComponent.js";
+import { Card, CardTitle } from "react-materialize";
 class AkustiikkaPage extends React.Component{
     constructor(props){
         super(props)
@@ -20,6 +22,11 @@ class AkustiikkaPage extends React.Component{
         return(<React.Fragment>
                 <NavBarOnTheLeft navBarName="Akustiikka"/>
                 <CameraButton/>
+                <SmallCardHeader text={"Akustiikka ja hyvinvointi"}
+                                  color={Colors.black}
+                                  size={Sizes.small}
+                                        />
+                
                 <PohjaPage text={textAssets.akustiikka.teksti1.text} image={imageAssets.haltiatar8273} header={textAssets.akustiikka.teksti1.header}>
                 
                 </PohjaPage>
@@ -40,20 +47,15 @@ class AkustiikkaPage extends React.Component{
                                         />
                 <CardPanelNoImage text={textAssets.akustiikka.teksti4.text} />
 
+                <SmallCardHeader text={"Huoneiden sijoittelu"}
+                                  color={Colors.black}
+                                  size={Sizes.small}
+                                        />
+                <CardPanelNoImage text={textAssets.akustiikka.teksti5.text} />
 
-                {/*Tuotteet*/}
-                <SmallCardHeader text={"Tuotteet"}
-                color={Colors.orange}
-                size={Sizes.small}
-                      />
-                <ProductLink text={textAssets.akustiikka.links.link1.linkHeader}
-                             url={textAssets.akustiikka.links.link1.linkUrl}/>
-                             
-                             <ProductLink text={textAssets.akustiikka.links.link2.linkHeader}
-                             url={textAssets.akustiikka.links.link2.linkUrl}/>
-
-                             <ProductLink text={textAssets.akustiikka.links.link3.linkHeader}
-                             url={textAssets.akustiikka.links.link3.linkUrl}/>              
+                <LinksComponent amountOfLinks={"3"} links={textAssets.akustiikka.links}>
+                
+                </LinksComponent>            
                </React.Fragment>)
     }
 }

@@ -9,7 +9,7 @@ import textAssets from "../assets/textAssets";
 import imageAssets from "../assets/imageAssets";
 import Colors from "../assets/colorObject";
 import NavBarOnTheLeft from "../navigationBar";
-import sizes from "../assets/sizes";
+import Sizes from "../assets/sizes";
 import PohjaPage from "./PohjaPage";
 
 
@@ -19,56 +19,61 @@ class PortaatPage extends React.Component{
     }
     render(){
         return (<React.Fragment>
-                    <NavBarOnTheLeft navBarName="Portaat & Aistilelut"/>                    
+                    <NavBarOnTheLeft navBarName="Portaat ja maja"/>                    
                     <CameraButton/>
-                    <SmallCardHeader text={"Portaat"}
+                    <SmallCardHeader text={"Portaikko"}
                     color={Colors.black}
-                    sizes={sizes.small}
+                    sizes={Sizes.small}
                     />
                     <CardPanelNoImage text={textAssets.portaat.teksti1.text}>
                     </CardPanelNoImage>
 
+
+                    {/*Portaiden alla oleva maja*/}
+
+                   <SmallCardHeader text={"Portaiden alla oleva maja"}
+                        color={Colors.black}
+                        size={Sizes.small}/>
+
                     <CardPanelNoImage text={textAssets.portaat.teksti2.text}>
                     </CardPanelNoImage>
 
+            
+
 
                     {/*Aistilelut*/}
+                    <SmallCardHeader text={"Majan aistilelu"}
+                        color={Colors.black}/>
                     
-                    <a href="#5"></a>
-
-                    <SmallCardHeader text={textAssets.aistilelut.teksti1.header}
-                    color={Colors.black}
-                    sizes={sizes.small}
-                    />
                     <CardPanelNoImage text={textAssets.aistilelut.teksti1.text}>
                     </CardPanelNoImage>
                     <SmallCardHeader text={textAssets.aistilelut.teksti2.header}
                     color={Colors.black}
-                    sizes={sizes.small}
+                    sizes={Sizes.small}
                     />
                     <CardPanelNoImage text={textAssets.aistilelut.teksti2.text}>
                     </CardPanelNoImage>
                     <SmallCardHeader text={textAssets.aistilelut.teksti3.header}
                     color={Colors.black}
-                    sizes={sizes.small}
+                    sizes={Sizes.small}
                     />
                     <CardPanelNoImage text={textAssets.aistilelut.teksti3.text}>
                     </CardPanelNoImage>
                     <SmallCardHeader text={textAssets.aistilelut.teksti4.header}
                     color={Colors.black}
-                    sizes={sizes.small}
+                    sizes={Sizes.small}
                     />
                     <CardPanelNoImage text={textAssets.aistilelut.teksti4.text}>
                     </CardPanelNoImage>
                     <SmallCardHeader text={textAssets.aistilelut.teksti5.header}
                     color={Colors.black}
-                    sizes={sizes.small}
+                    sizes={Sizes.small}
                     />
                     <CardPanelNoImage text={textAssets.aistilelut.teksti5.text}>
                     </CardPanelNoImage>
                     <SmallCardHeader text={textAssets.aistilelut.teksti6.header}
                     color={Colors.black}
-                    sizes={sizes.small}
+                    sizes={Sizes.small}
                     />
                     <CardPanelNoImage text={textAssets.aistilelut.teksti6.text}>
                     </CardPanelNoImage>

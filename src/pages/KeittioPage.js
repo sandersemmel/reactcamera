@@ -14,6 +14,7 @@ import Colors from "../assets/colorObject";
 import SmallCardHeader from "./SmallCardHeader";
 import ProductLink from "../ProductLink";
 import Sizes from "../assets/sizes";
+import LinksComponent from "../LinksComponent";
 
 class KeittioPage extends React.Component{
     constructor(props){
@@ -28,7 +29,7 @@ class KeittioPage extends React.Component{
                 
                 </PohjaPage>
 
-                <SmallCardHeader text={"Keittiön saareke"} color={Colors.black}
+                <SmallCardHeader text={"Keittiön saarekkeet"} color={Colors.black}
                 size={Sizes.small}/>
 
                 <CardPanelNoImage text={textAssets.keittio.teksti3.text}>
@@ -42,22 +43,7 @@ class KeittioPage extends React.Component{
                 size={Sizes.small}/>
 
                 <CardPanelNoImage text={textAssets.keittio.teksti4.text}>
-                </CardPanelNoImage>
-
-                {/*Tuotteet*/}
-
-                <SmallCardHeader text={"Tuotteet"}
-                color={Colors.orange}
-                size={Sizes.small}
-                      />
-                <ProductLink text={textAssets.keittio.links.link1.linkHeader}
-                             url={textAssets.keittio.links.link1.linkUrl}/>
-                             
-                             <ProductLink text={textAssets.keittio.links.link2.linkHeader}
-                             url={textAssets.keittio.links.link2.linkUrl}/>
-
-                             <ProductLink text={textAssets.keittio.links.link3.linkHeader}
-                             url={textAssets.keittio.links.link3.linkUrl}/>    
+                </CardPanelNoImage>  
 
             {/*Vihersisutaminen ja sadonkorjuuparveke*/}
             <SmallCardHeader text={"Vihersisustaminen"} color={Colors.black}
@@ -65,8 +51,18 @@ class KeittioPage extends React.Component{
 
             <CardPanelNoImage text={textAssets.sadonkorjuu.teksti1.text}>
             </CardPanelNoImage>
+
+            <SmallCardHeader text={"Sadonkorjuuparveke"} color={Colors.black}
+            size={Sizes.small}/>
             <CardPanelNoImage text={textAssets.sadonkorjuu.teksti2.text}>
             </CardPanelNoImage>
+
+
+            {/*Tuotteet*/}
+            <LinksComponent amountOfLinks="3" links={textAssets.keittio.links}>
+            
+            </LinksComponent>
+
             </React.Fragment>);
     }
 }
