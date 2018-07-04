@@ -34,3 +34,14 @@ body {
     margin-left: 25%;
     display: block;
 }
+.imageBox{
+    margin: auto;
+    max-width:498px;
+    max-height:498px;
+    overflow: hidden;
+}
+.imageTag{
+    object-fit:contain;
+    max-width:100%;
+    max-height:100%;
+}

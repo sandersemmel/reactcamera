@@ -20,9 +20,6 @@ class WcPage extends React.Component {
     constructor(props) {
         super(props);
     }
-    redirect(){
-        window.location.replace("http://gmail.com");
-    }
     render() {
         return (
             <React.Fragment>

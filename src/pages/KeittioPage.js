@@ -15,6 +15,7 @@ import SmallCardHeader from "./SmallCardHeader";
 import ProductLink from "../ProductLink";
 import Sizes from "../assets/sizes";
 import LinksComponent from "../LinksComponent";
+import PlainImageComponent from "../PlainImageComponent";
 
 class KeittioPage extends React.Component{
     constructor(props){
@@ -25,19 +26,28 @@ class KeittioPage extends React.Component{
                 <NavBarOnTheLeft navBarName={"Keittiö"}/>
                 <CameraButton/>
 
-                <PohjaPage image={imageAssets.haltiatar} text={textAssets.keittio.teksti1.text} header={textAssets.keittio.teksti1.header}>
-                
-                </PohjaPage>
+                {/*Keittiö*/}
+                <SmallCardHeader text={textAssets.keittio.teksti1.header} color={Colors.black}
+                size={Sizes.small}/>
+                <PlainImageComponent image={imageAssets.haltiatar}/>
 
+
+                <CardPanelNoImage text={textAssets.keittio.teksti1.text}>
+                </CardPanelNoImage>  
+
+                {/*Keittiön saarekkeet*/}
                 <SmallCardHeader text={"Keittiön saarekkeet"} color={Colors.black}
                 size={Sizes.small}/>
 
                 <CardPanelNoImage text={textAssets.keittio.teksti3.text}>
                 </CardPanelNoImage>
 
-                <PohjaPage image={imageAssets.haltiatar8325} text={textAssets.keittio.teksti2.text} header={textAssets.keittio.teksti2.header}>
-                
-                </PohjaPage>
+                {/*Keittiön allas*/}
+                <SmallCardHeader text={textAssets.keittio.teksti2.header} color={Colors.black}
+                size={Sizes.small}/>
+                <PlainImageComponent image={imageAssets.haltiatar8325}/>
+                <CardPanelNoImage text={textAssets.keittio.teksti2.text}>
+                </CardPanelNoImage>  
 
                 <SmallCardHeader text={"Liesituuletin"} color={Colors.black}
                 size={Sizes.small}/>
