@@ -30,8 +30,6 @@ class KeittioPage extends React.Component{
                 <SmallCardHeader text={textAssets.keittio.teksti1.header} color={Colors.black}
                 size={Sizes.small}/>
                 <PlainImageComponent image={imageAssets.haltiatar}/>
-
-
                 <CardPanelNoImage text={textAssets.keittio.teksti1.text}>
                 </CardPanelNoImage>  
 

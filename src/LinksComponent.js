@@ -31,7 +31,7 @@ class LinksComponent extends React.Component {
             if(this.state.showContents){
                 return(<React.Fragment>
                                 
-                            <Button onClick={this.clickHandler}>{this.state.buttonName}</Button>
+                            <Button className={"btn buttonLinks"} onClick={this.clickHandler}>{this.state.buttonName}</Button>
 
                             <ProductLink text={this.state.links.link1.linkHeader}
                                 url={this.state.links.link1.linkUrl}/>

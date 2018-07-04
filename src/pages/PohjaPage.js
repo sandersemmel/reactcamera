@@ -10,6 +10,11 @@ import {
   Footer
 } from "react-materialize";
 import CameraButton from "../cameraButton.js";
+import CardPanelNoImage from "./CardPanelNoImage.js";
+import Sizes from "../assets/sizes";
+import Colors from "../assets/colorObject";
+import SmallCardHeader from "./SmallCardHeader";
+import PlainImageComponent from "../PlainImageComponent";
 
 class PohjaPage extends React.Component {
   constructor(props) {
@@ -46,18 +51,12 @@ class PohjaPage extends React.Component {
             }else{
         return(
             <React.Fragment>
-                <Card
-                header={<CardTitle reveal image={this.state.image} waves="light" />}
-                title={this.state.header}
-                reveal={
-                    <p>
-                    {this.state.text}
-                    </p>
-                }
-                >
-                    <p>
-                    </p>
-                </Card>
+                <SmallCardHeader text={this.state.header} color={Colors.black}
+                size={Sizes.small}/>
+                <PlainImageComponent image={this.state.image}/>
+                <CardPanelNoImage text={this.state.text}>
+                </CardPanelNoImage>  
+
             </React.Fragment>
             )
             }     
