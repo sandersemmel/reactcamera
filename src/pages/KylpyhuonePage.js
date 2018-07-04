@@ -14,8 +14,8 @@ import SmallCardHeader from "./SmallCardHeader";
 import Sizes from "../assets/sizes";
 import NavBarOnTheLeft from "../navigationBar";
 import ProductLink from "../ProductLink";
-import ReactDropdown from "react-dropdown";
 import LinksComponent from "../LinksComponent.js";
+import PlainImageComponent from "../PlainImageComponent";
 class KylpyhuonePage extends React.Component {
     constructor(props) {
         super(props);
@@ -53,6 +53,8 @@ class KylpyhuonePage extends React.Component {
             color={Colors.black}
             size={Sizes.small}
           />
+          <PlainImageComponent image={imageAssets.voiteet}>
+          </PlainImageComponent>
             <CardPanelNoImage text={textAssets.kylpyhuone.teksti5.text} color={Colors.grey3}>
             </CardPanelNoImage>
           

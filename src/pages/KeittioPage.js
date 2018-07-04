@@ -33,6 +33,8 @@ class KeittioPage extends React.Component{
                 <CardPanelNoImage text={textAssets.keittio.teksti1.text}>
                 </CardPanelNoImage>  
 
+                <PlainImageComponent image={imageAssets.hana}/> 
+
                 {/*Keittiön saarekkeet*/}
                 <SmallCardHeader text={"Keittiön saarekkeet"} color={Colors.black}
                 size={Sizes.small}/>

@@ -14,6 +14,7 @@ import SmallCardHeader from "./SmallCardHeader.js";
 import Colors from "../assets/colorObject";
 import NavBarOnTheLeft from "../navigationBar.js";
 import LinksComponent from "../LinksComponent.js";
+import PlainImageComponent from "../PlainImageComponent";
 class SailytystilatPage extends React.Component {
     constructor(props) {
         super(props);
@@ -33,6 +34,8 @@ class SailytystilatPage extends React.Component {
                 color={Colors.black}
                 size={Sizes.small}/>
 
+            <PlainImageComponent image={imageAssets.korit}>
+            </PlainImageComponent>
                 <CardPanelNoImage text={textAssets.sailytystilat.teksti2.text}>
                 
                 </CardPanelNoImage>

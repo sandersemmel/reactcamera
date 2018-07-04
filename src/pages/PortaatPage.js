@@ -11,6 +11,7 @@ import Colors from "../assets/colorObject";
 import NavBarOnTheLeft from "../navigationBar";
 import Sizes from "../assets/sizes";
 import PohjaPage from "./PohjaPage";
+import PlainImageComponent from "../PlainImageComponent";
 
 
 class PortaatPage extends React.Component{
@@ -53,6 +54,8 @@ class PortaatPage extends React.Component{
                     />
                     <CardPanelNoImage text={textAssets.aistilelut.teksti2.text}>
                     </CardPanelNoImage>
+                    <PlainImageComponent image={imageAssets.pallot}/>
+
                     <SmallCardHeader text={textAssets.aistilelut.teksti3.header}
                     color={Colors.black}
                     sizes={Sizes.small}
