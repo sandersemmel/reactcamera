@@ -21,6 +21,8 @@ const imageAssets = {
     haltiatar8410:require("../kuvat/haltiatar-8410.jpg"),
     haltiatar8431:require("../kuvat/haltiatar-8431.jpg"),
     haltiatar8448:require("../kuvat/haltiatar-8448.jpg"),
+    luovatila:require("../kuvat/luovatila.JPG"),
+    wckuva:require("../kuvat/wckuva.jpg"),
     hana:require("../kuvat/hana.JPG"),
     voiteet:require("../kuvat/voiteet.JPG"),
     pallot:require("../kuvat/pallot.JPG"),

@@ -22,6 +22,7 @@ import NavBarOnTheLeft from "../navigationBar";
 import Sizes from "../assets/sizes";
 import ProductLink from "../ProductLink";
 import LinksComponent from "../LinksComponent.js";
+import PlainImageComponent from "../PlainImageComponent";
 class ToiminnallisuusPage extends React.Component {
     constructor(props){
         super(props);
@@ -41,9 +42,13 @@ class ToiminnallisuusPage extends React.Component {
               <CardPanelNoImage text={textAssets.toiminnallisuus.teksti1.text}/>
 
             {/*Välineitä energian purkuun*/}  
+
               <SmallCardHeader text={"Välineitä energian purkuun"}
+            
               color={Colors.black}
               size={Sizes.small}/>
+
+              <PlainImageComponent image={imageAssets.haltiatar8301} />
               <CardPanelNoImage text={textAssets.toiminnallisuus.teksti2.text}/>
               <ProductLink text="Lue lisää aistileluista"
               url="/portaat#"/>

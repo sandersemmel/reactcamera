@@ -8,6 +8,10 @@ const paths = {
     ruokailu: "/ruokailu",
     sauna: "/sauna",
     valaistus: "/valaistus",
-    wc: "/wc"
+    wc: "/wc",
+    sailytys: "/sailytys",
+    toiminnallisuus: "/toiminnallisuus",
+    olohuone: "/olohuone",
+    luovatila: "luovatila"
 }
 module.exports = paths;

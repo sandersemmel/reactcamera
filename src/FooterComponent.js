@@ -15,7 +15,9 @@ class FooterComponent extends React.Component {
                     <img className="partnerImage" src={ImageAssets.karjaranta21}></img>
                     <img className="partnerImage" src={ImageAssets.samklogo}></img>
                         <div className="footerLow">
-                            <p className="year">2018</p>
+                            <div className="year">
+                                <p className="yearText">2018</p>
+                            </div>
                         </div>
                 </div>
             </React.Fragment>)

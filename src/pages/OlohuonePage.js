@@ -25,8 +25,6 @@ class OlohuonePage extends React.Component {
             <NavBarOnTheLeft navBarName={"Olohuone"}></NavBarOnTheLeft>
                 {/*Olohuone*/} 
                 <CameraButton/>
-                <SmallCardHeader text={"Olohuone"} color={Colors.orange}>
-                </SmallCardHeader>
                 
                 <PohjaPage text={textAssets.olohuone.teksti1.text}
                            header={textAssets.olohuone.teksti1.header}

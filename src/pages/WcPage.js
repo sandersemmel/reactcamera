@@ -15,6 +15,7 @@ import Colors from "../assets/colorObject";
 import sizes from "../assets/sizes";
 import { Link } from "react-router-dom";
 import LinksComponent from "../LinksComponent.js";
+import PlainImageComponent from "../PlainImageComponent";
 
 class WcPage extends React.Component {
     constructor(props) {
@@ -28,8 +29,9 @@ class WcPage extends React.Component {
                     
                 <SmallCardHeader text={textAssets.wc.teksti1.header}
                                 color={Colors.black}
-                                size={sizes.small}>
+                                size={sizes.small}>               
                 </SmallCardHeader>
+                <PlainImageComponent image={imageAssets.wckuva}/>   
                 <CardPanelNoImage text={textAssets.wc.teksti1.text}>
                 </CardPanelNoImage>
 

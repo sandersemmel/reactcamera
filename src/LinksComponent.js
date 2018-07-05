@@ -31,7 +31,7 @@ class LinksComponent extends React.Component {
             if(this.state.showContents){
                 return(<React.Fragment>
                                 
-                            <Button className={"btn buttonLinks"} onClick={this.clickHandler}>{this.state.buttonName}</Button>
+                            <Button className={"showLinksButton"} onClick={this.clickHandler}>{this.state.buttonName}</Button>
 
                             <ProductLink text={this.state.links.link1.linkHeader}
                                 url={this.state.links.link1.linkUrl}/>
@@ -41,7 +41,7 @@ class LinksComponent extends React.Component {
                         </React.Fragment>);
             }
             else{
-                return(<Button onClick={this.clickHandler}>{this.state.buttonName}</Button>);
+                return(<Button className={"showLinksButton"} onClick={this.clickHandler}>{this.state.buttonName}</Button>);
                 
             }
         }
@@ -49,7 +49,7 @@ class LinksComponent extends React.Component {
             if(this.state.amountOfLinks === "2"){
                 if(this.state.showContents){
                     return(<React.Fragment>
-                                <Button onClick={this.clickHandler}>{this.state.buttonName}</Button>
+                                <Button className={"showLinksButton"} onClick={this.clickHandler}>{this.state.buttonName}</Button>
     
                                 <ProductLink text={this.state.links.link1.linkHeader}
                                     url={this.state.links.link1.linkUrl}/>
@@ -61,7 +61,7 @@ class LinksComponent extends React.Component {
                             </React.Fragment>);
                 }
                 else{
-                    return(<Button onClick={this.clickHandler}>{this.state.buttonName}</Button>);
+                    return(<Button className={"showLinksButton"} onClick={this.clickHandler}>{this.state.buttonName}</Button>);
                     
                 } 
 
@@ -71,7 +71,7 @@ class LinksComponent extends React.Component {
             if(this.state.amountOfLinks === "3"){
                 if(this.state.showContents){
                     return(<React.Fragment>
-                                <Button onClick={this.clickHandler}>{this.state.buttonName}</Button>
+                                <Button className={"showLinksButton"} onClick={this.clickHandler}>{this.state.buttonName}</Button>
     
                                 <ProductLink text={this.state.links.link1.linkHeader}
                                     url={this.state.links.link1.linkUrl}/>
@@ -86,7 +86,7 @@ class LinksComponent extends React.Component {
                             </React.Fragment>);
                 }
                 else{
-                    return(<Button onClick={this.clickHandler}>{this.state.buttonName}</Button>);
+                    return(<Button className={"showLinksButton"} onClick={this.clickHandler}>{this.state.buttonName}</Button>);
                     
                 } 
 
@@ -96,7 +96,7 @@ class LinksComponent extends React.Component {
             if(this.state.amountOfLinks === "4"){
                 if(this.state.showContents){
                     return(<React.Fragment>
-                                <Button onClick={this.clickHandler}>{this.state.buttonName}</Button>
+                                <Button className={"showLinksButton"} onClick={this.clickHandler}>{this.state.buttonName}</Button>
     
                                 <ProductLink text={this.state.links.link1.linkHeader}
                                     url={this.state.links.link1.linkUrl}/>
@@ -114,14 +114,14 @@ class LinksComponent extends React.Component {
                             </React.Fragment>);
                 }
                 else{
-                    return(<Button onClick={this.clickHandler}>{this.state.buttonName}</Button>);
+                    return(<Button className={"showLinksButton"} onClick={this.clickHandler}>{this.state.buttonName}</Button>);
                     
                 } 
             }
             if(this.state.amountOfLinks === "7"){
                 if(this.state.showContents){
                     return(<React.Fragment>
-                                <Button onClick={this.clickHandler}>{this.state.buttonName}</Button>
+                                <Button className={"showLinksButton"} onClick={this.clickHandler}>{this.state.buttonName}</Button>
     
                                 <ProductLink text={this.state.links.link1.linkHeader}
                                     url={this.state.links.link1.linkUrl}/>
@@ -147,7 +147,7 @@ class LinksComponent extends React.Component {
                             </React.Fragment>);
                 }
                 else{
-                    return(<Button onClick={this.clickHandler}>{this.state.buttonName}</Button>);
+                    return(<Button className={"showLinksButton"} onClick={this.clickHandler}>{this.state.buttonName}</Button>);
                     
                 } 
             }

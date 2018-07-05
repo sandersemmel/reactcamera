@@ -37,6 +37,14 @@ class Kohteet extends React.Component{
                 <br/>
                 <a href={paths.wc}><Button className={"kohteetButton"} href={paths.wc}>{"Wc"}</Button></a>
                 <br/>
+                <a href={paths.toiminnallisuus}><Button className={"kohteetButton"} href={paths.toiminnallisuus}>{"Toiminnallisuus"}</Button></a>
+                <br/>
+                <a href={paths.sailytys}><Button className={"kohteetButton"} href={paths.sailytys}>{"Sailytys"}</Button></a>
+                <br/>
+                <a href={paths.luovatila}><Button className={"kohteetButton"} href={paths.luovatila}>{"Luova tila"}</Button></a>
+                <br/>
+                <a href={paths.olohuone}><Button className={"kohteetButton"} href={paths.olohuone}>{"Olohuone"}</Button></a>
+                <br/>
             </React.Fragment>)
     }
 }

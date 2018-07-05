@@ -15,6 +15,7 @@ import Colors from "../assets/colorObject";
 import Sizes from "../assets/sizes";
 import { Link } from "react-router-dom";
 import LinksComponent from "../LinksComponent";
+import PlainImageComponent from "../PlainImageComponent";
 
 class LuovaTilaPage extends React.Component {
     constructor(props) {
@@ -34,6 +35,8 @@ class LuovaTilaPage extends React.Component {
 
             <CardPanelNoImage text={textAssets.luovatila.teksti2.text}>
             </CardPanelNoImage>
+            <PlainImageComponent image={imageAssets.luovatila} />
+            
 
             </React.Fragment>)
     }

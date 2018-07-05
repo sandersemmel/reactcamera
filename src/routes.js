@@ -25,6 +25,7 @@ import LuovaTilaPage from "./pages/LuovaTilaPage";
 import Footer from "react-materialize/lib/Footer";
 import ImageAssets from "./assets/imageAssets";
 import FooterComponent from "./FooterComponent";
+import ProductButton from "./ProductButton";
 
 class TestRoutes extends React.Component {
     constructor(props) {
@@ -53,7 +54,6 @@ class TestRoutes extends React.Component {
                     <Route path="/luovatila" component={LuovaTilaPage}/>
                 </Switch>
             </BrowserRouter>
-
             <FooterComponent/>
         </React.Fragment>);
     }
