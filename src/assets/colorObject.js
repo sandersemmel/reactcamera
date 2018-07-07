@@ -8,7 +8,8 @@ const Colors = {
     black: "blue-grey darken-4 white-text",
     grey: "grey lighten-5 black-text",
     grey2: "grey lighten-4 black-text",
-    grey3: "grey lighten-3 black-text"
+    grey3: "grey lighten-3 black-text",
+    
 }
 
 module.exports = Colors

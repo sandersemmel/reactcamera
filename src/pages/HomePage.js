@@ -11,6 +11,8 @@ import textAssets from "../assets/textAssets.js";
 import SmallCardHeader from "./SmallCardHeader";
 import Colors from "../assets/colorObject";
 import {BrowserView, isBrowser, isMobile} from 'react-device-detect';
+import ProductLink from "../ProductLink";
+import NavBarOnTheLeft from "../navigationBar";
 class HomePage extends React.Component {
     constructor(props) {
         super(props);
@@ -19,6 +21,7 @@ class HomePage extends React.Component {
         if(isMobile){
             return (
                 <React.Fragment>
+                    <NavBarOnTheLeft navBarName="Aloitus"/>
                     <CameraButton/>
                     <br/>
                     <SmallCardHeader text={"1. Käynnistä QR-koodinlukija ylhäällä olevasta napista"}
@@ -28,6 +31,14 @@ class HomePage extends React.Component {
     
                     <SmallCardHeader text={"3. Kohdista puhelimen kamera QR-koodin kohdalle"}
                     color={Colors.green} />
+
+                    <br/>
+
+                    <a href="/kohteet">
+                        <SmallCardHeader text={"Tai paina vain tästä nähdäksesi sisällysluettelon"}
+                                    color={Colors.grey3} />
+                    </a>
+                                        
                 </React.Fragment>);
         }else{
             return(window.location.replace("https://www.haltiatar.xyz/kohteet"))
