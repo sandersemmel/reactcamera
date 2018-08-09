@@ -73,6 +73,7 @@ h3{
     height: 70px;
     width: 70px;
     object-fit: contain;
+    cursor: pointer;
 }
 .btn {
     margin-top: 3%;
