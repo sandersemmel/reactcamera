@@ -30,6 +30,7 @@ const imageAssets = {
     karjaranta21:require("../kuvat/karjaranta21.png"),
     visitpori:require("../kuvat/visitpori.png"),
     samklogo:require("../kuvat/samklogo.png"),
+    paulalogo:require("../kuvat/paulalogo.JPG"),
     noimage:require("../kuvat/noimage.gif")
 }
 module.exports = imageAssets
